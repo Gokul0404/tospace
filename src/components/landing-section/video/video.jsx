@@ -6,34 +6,37 @@ function Video() {
   return (
     <>
       <div className="video_part_section videobg  parafont ">
-        <div className="video-side  ">
-          <div className="vide0_session grid grid-cols-2 gap-4 w-[100%] py-10">
-            <div className="content-side  laptop:mx-[20vh] videobg z-10 laptop:p-5 w-[85%] text-justify">
+        <div className="  video-side  ">
+          <div className="vide0_session mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:flex-none laptop:grid laptop:grid-cols-2 gap-4 w-[100%] py-10">
+            <div className="content-side mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:items-start laptop:flex laptop:justify-start items-start laptop:mx-[20vh] videobg z-10 laptop:p-5 w-[85%] text-justify">
               <h1 className="fontbold text-fblue text-desk1 mobile-sm:text    ">
                 HOW OUR COURSES
               </h1>
               <h3 className="mobile-sm:text-center laptop:text-justify">
                 Video Upskill your team with Udemy Business
               </h3>
-              <ul className="list-disc mt-[10%] laptop:text-justify mobile-sm:p-3 w-[100%]">
-                <li>Unlimited access to 19,000+ top Udemy courses, anytime.</li>
-                <li className="pt-4">
-                  International course collection in 14 languages
-                </li>
-                <li className="pt-4">
-                  Top certifications in tech and business
-                </li>
-                <li className="pt-4">
-                  Unlimited access to 19,000+ top Udemy courses, anytime.
-                </li>
-                <li className="pt-4">
-                  International course collection in 14 languages
-                </li>
-                <li className="pt-4">
-                  Top certifications in tech and business
-                </li>
-              </ul>
-
+              <div>
+                <ul className=" mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center   list-disc mt-[10%] laptop:text-justify mobile-sm:p-3 w-[100%]">
+                  <li>
+                    Unlimited access to 19,000+ top Udemy courses, anytime.
+                  </li>
+                  <li className="pt-4">
+                    International course collection in 14 languages
+                  </li>
+                  <li className="pt-4">
+                    Top certifications in tech and business
+                  </li>
+                  <li className="pt-4">
+                    Unlimited access to 19,000+ top Udemy courses, anytime.
+                  </li>
+                  <li className="pt-4">
+                    International course collection in 14 languages
+                  </li>
+                  <li className="pt-4">
+                    Top certifications in tech and business
+                  </li>
+                </ul>
+              </div>
               <div className="explore_btn font-Azonix laptop-lg:mt-[4vh] mobile-sm:text-center laptop:text-justify laptop:mt-5">
                 {/* <motion.button
                   className="bg-[#333333] parafont laptop:w-[30%] h-[4vh] mobile-sm:w-[15vh] 4k:text-4k desktop:text-desk mobile-sm:text-mob  rounded border-none   "
@@ -48,7 +51,7 @@ function Video() {
                 </Link>
               </div>
             </div>
-            <div className="pt-[10%]">
+            <div className="pt-[10%] mobile-sm:px-10">
               <motion.video
                 autoPlay
                 muted

@@ -187,7 +187,7 @@ function Career() {
       </div>
 
       {/* mobile view */}
-      <div className="mobile_career bg-black  pb-[5vh] laptop:hidden">
+      <div className="mobile_career careerbg  pb-[5vh] laptop:hidden">
         <div className="career_heading ">
           <h2 className="text-icon font-spaceage text-fblue text-center pt-3">
             lanch your Career
