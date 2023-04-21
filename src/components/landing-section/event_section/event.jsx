@@ -54,6 +54,8 @@ function Event() {
                   <div>
                     <div className="event_main flex gap-x-1 !cursor-none">
                       <div className="laptop-lg:w-[20vw]    laptop:w-[20vw] ">
+                        {/* 1st */}
+
                         <div className="section-1 flex flex-col items-end mt-[15vh] gap-y-1 4k:mt-[19vh] desktop-lg-4k:mt-[16.6vh]">
                           <div className="text-black bg-slate-700 w-[140px] h-[100px] overflow-hidden">
                             <img
@@ -78,28 +80,31 @@ function Event() {
                           </div>
                         </div>
                       </div>
+
+                      {/* 2nd */}
                       <div className="flex flex-col gap-y-1">
+                        {/* 2nd */}
                         <div className="w-[40vw] ">
                           <div className="section_2 flex flex-row gap-x-1 items-end justify-start">
-                            <div className="text-black bg-slate-700 w-[90px] h-[80px] laptop:mt-[18.5vh] overflow-hidden desktop-lg:mt-[15vh] desktop-lg-4k:mt-[16.65vh] ">
+                            <div className="text-black bg-slate-700 w-[90px] h-[80px] laptop:mt-[18.5vh] overflow-hidden desktop-lg:mt-[15vh] desktop-lg:mt-[16.65vh] desktop-lg-4k:w-[120px]">
                               <img
                                 src={cards.img[3]}
                                 className="!w-inherit h-inherit object-cover"
                               />
                             </div>
-                            <div className="text-black bg-slate-700 w-[120px] h-[157px]  overflow-hidden  ">
+                            <div className="text-black bg-slate-700 w-[120px] h-[157px]  overflow-hidden desktop-lg:w-[150px] ">
                               <img
                                 src={cards.img[4]}
                                 className="!w-inherit !h-[100%] !object-cover"
                               />
                             </div>
-                            <div className="text-black bg-slate-700 w-[120px] h-[107px]   overflow-hidden    ">
+                            <div className="text-black bg-slate-700 w-[120px] h-[107px]   overflow-hidden  desktop-lg:w-[160px]  ">
                               <img
                                 src={cards.img[5]}
                                 className="!w-inherit !h-inherit object-cover"
                               />
                             </div>
-                            <div className="text-black bg-slate-700 w-[110px] h-[91px] overflow-hidden  ">
+                            <div className="text-black bg-slate-700 w-[110px] h-[91px] overflow-hidden desktop-lg:w-[140px] ">
                               <img
                                 src={cards.img[6]}
                                 className="!w-inherit h-inherit object-cover"
@@ -107,6 +112,8 @@ function Event() {
                             </div>
                           </div>
                         </div>
+
+                        {/* 3rd */}
                         <div className="w-[35vw]   ">
                           <div className="section_3 flex flex-row gap-x-1">
                             <div className="text-black bg-slate-700 w-[160px] h-[93px] overflow-hidden">
@@ -143,7 +150,7 @@ function Event() {
                 </div>
                 <SwiperSlide>
                   <div className="flex">
-                    <div class="w-[20vw] h-[28vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-[28vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -162,7 +169,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw]  h-[30vh] shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
+                    <div class="w-[20vw]  h-[30vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[29vh]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -181,7 +188,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw] h-[28vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-[28vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img

@@ -10,8 +10,8 @@ import { Twitter } from '@mui/icons-material';
 export default function Footer() {
   return (
     <div className="w-screen footerbg  text-black justify-center flex items-center ">
-      <div className="grid grid-cols-4 gap-4 w-[85vw] p-5">
-        <div>
+      <div className="mobile-sm:grid  mobile-sm:grid-cols-1 mobile-sm: laptop:grid-cols-4 gap-4 w-[85vw] p-5">
+        <div className="mobile-sm:py-2">
           <span className="font-bold text-[20px]">EVOLUTION</span>
 
           <div className="py-3">
@@ -28,13 +28,12 @@ export default function Footer() {
             <span className="hover:text-lin">
               <LinkedInIcon />
             </span>
-            <span className='hover:text-twi'>
-              
-              <Twitter/>
+            <span className="hover:text-twi">
+              <Twitter />
             </span>
           </div>
         </div>
-        <div className="font-semibold justify-self-center  ">
+        <div className=" mobile-sm:py-2 font-semibold laptop:justify-self-center  ">
           <p className=" ease-in-out duration-700 hover:text-blue-500">About</p>
           <p className="py-2  ease-in-out duration-700 hover:text-blue-500">
             Careers
@@ -52,7 +51,7 @@ export default function Footer() {
             Contact Us
           </p>
         </div>
-        <div className="w-[100%] ">
+        <div className="w-[100%] mobile-sm:py-2 ">
           <h3 className="font-bold">Contact Us</h3>
           <div className="flex pt-3">
             <div>
@@ -95,7 +94,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mobile-sm:py-2">
           <p className="font-semibold">Sign up for updates</p>
           <div className="py-2">
             <input
