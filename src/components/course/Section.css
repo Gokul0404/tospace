@@ -1,0 +1,44 @@
+.minih{
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+
+
+.ab_btnc {
+ width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+
+}
+
+
+.tools{
+    background: rgb(14,46,130);
+background: linear-gradient(166deg, rgba(14,46,130,1) 0%, rgba(3,3,53,1) 99%);
+}
+
+.ab_btnc::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #216eff 0%, #2b2b2b 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.ab_btnc:hover::before {
+ width: 9em;
+}

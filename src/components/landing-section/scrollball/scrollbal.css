@@ -1,0 +1,80 @@
+.roumd_position {
+  width: 100%;
+  /* position: fixed; */
+
+
+  /* margin-top: 40%; */
+  display: none;
+}
+
+.roumd_position_1 {
+  width: 100%;
+  position: fixed;
+  /* padding: 1%; */
+  z-index: 1000;
+  bottom: 10% !important;
+  /* margin-top: 40%; */
+  transition-delay: 2s ease-in-out !important;
+
+  display: block;
+}
+
+.container_sun {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding-right: 2%;
+  transition-delay: 2s ease-in-out !important;
+
+}
+
+.sun {
+  width: 45px;
+  height: 45px;
+  /* background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+  background: linear-gradient(to right, #fcbb04, #fffc00); */
+  background: rgb(255,255,255);
+background: linear-gradient(38deg, rgba(255,255,255,1) 0%, #216eff 78%);
+  border-radius: 60px;
+  cursor: pointer;
+
+  position: absolute;
+}
+
+.sunshine {
+  animation: sunshines 2s infinite;
+  
+}
+
+.upa{
+
+    color: rgb(255, 255, 255);
+
+}
+
+
+@keyframes sunshines {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(15px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
+}

@@ -1,0 +1,11 @@
+.swiper-slide-active .swipe {
+  zoom: 100%;
+  transform: translate(0, -10%);
+  transition: 1s;
+}
+.swipe {
+  zoom: 100%;
+}
+.m {
+  padding-top: 7vh !important;
+}
