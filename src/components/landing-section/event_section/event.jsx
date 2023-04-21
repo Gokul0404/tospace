@@ -162,7 +162,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw]  h-[30vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
+                    <div class="w-[20vw]  h-[30vh] shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
                         <a href="#">
                           <img

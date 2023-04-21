@@ -1,7 +1,7 @@
 
 import Home from "./components/landing-section/home/home";
 import Viewabout from "./components/about-section/viewabout";
-import Layout from "./components/layout/layout"; 
+import Layout from "./components/layout/layout";
 import {
   createBrowserRouter,
   createRoutesFromElements,
