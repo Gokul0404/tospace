@@ -1,5 +1,4 @@
-
-export const coursedata = [
+export const vediodata = [
   {
     id: 1,
     img: "./courseimg/course.jpg",
@@ -26,30 +25,6 @@ export const coursedata = [
   },
   {
     id: 3,
-    img: "./courseimg/course.jpg",
-    head: "3D Printing",
-    v1: "25+",
-    v2: "5+",
-    v3: "38+",
-    c1: "Concepts",
-    c2: "Experiments",
-    c3: "Quizzes",
-    pera: "Use the online image color picker above to select a color and get the HTML Color Code of this pixel. Also you get the HEX color code value, RGB value and HSV value.",
-  },
-  {
-    id: 4,
-    img: "./courseimg/course.jpg",
-    head: "3D Printing",
-    v1: "25+",
-    v2: "5+",
-    v3: "38+",
-    c1: "Concepts",
-    c2: "Experiments",
-    c3: "Quizzes",
-    pera: "Use the online image color picker above to select a color and get the HTML Color Code of this pixel. Also you get the HEX color code value, RGB value and HSV value.",
-  },
-  {
-    id: 5,
     img: "./courseimg/course.jpg",
     head: "3D Printing",
     v1: "25+",

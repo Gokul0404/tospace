@@ -14,7 +14,7 @@ import Founders from "./founders.js";
 function Viewabout() {
   return (
     <>
-      <div className="bg-black h-[100%] text-white  p-[10vh]">
+      <div className="bg-white h-[100%] text-black p-[10vh] pt-[8%]">
         <div className="header laptop:text-para mobile-sm:text-[22px] ">
           <h1>WHY CHOOSE US</h1>
         </div>

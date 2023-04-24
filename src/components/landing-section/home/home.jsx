@@ -52,12 +52,17 @@ function Home() {
                 </div>
               </div>
             </div>
-          </motion.div>
+                  </motion.div>
+                  
 
+                  {/* space man image */}
+                  
+
+                  
           <motion.div className="pl-[20vw] pt-[10vh]">   
-            <div className="img">
+            {/* <div className="img">
               <img src={spaceman} className="  mobile-lg:w-[80%]  laptop:w-[80%]   laptop-lg:w-[100%] h-[100%] "></img>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
         <Scrollbal />

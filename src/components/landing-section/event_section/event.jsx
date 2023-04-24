@@ -23,7 +23,7 @@ function Event() {
     <>
       <div className="event_section  eventbg parafont pb-5 mobile-sm:hidden tablet:block">
         <div className="event_heading text-center pt-10 ">
-          <h1 className="fontbold text-fblue text-desk1">Events</h1>
+          <h1 className="fontbold text-fblue text-desk1">Workshop</h1>
           <h5 className="mobile-sm:text-justify mobile-sm:p-1 tablet:text-center ">
             Instructors from around the world teach millions of students on
             Udemy. <br />

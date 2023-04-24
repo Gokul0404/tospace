@@ -42,3 +42,23 @@ background: linear-gradient(166deg, rgba(14,46,130,1) 0%, rgba(3,3,53,1) 99%);
 .ab_btnc:hover::before {
  width: 9em;
 }
+
+
+.course_btn1{
+  /* background-color: #030334; */
+box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #fff;
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    border-radius: 10px;
+}
+
+.course_btn2{
+    background-color: #020335;
+color: white;
+        border-radius: 10px;
+}
+
+
+.count{
+    font-weight: 800;
+    font-size: 22px;
+}

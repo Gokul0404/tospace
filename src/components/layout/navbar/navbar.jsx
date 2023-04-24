@@ -1,34 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Modal, Drawer } from "antd";
-import '../navbar/nav.css'
+import "../navbar/nav.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../landing-section/images/logowhite.png";
-import { Link, useNavigate } from "react-router-dom";
+import blackLogo from "../../landing-section/images/logo.png";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import { Button, TextField } from "@mui/material";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const location = useLocation();
 
- const [colorChange, setColorchange] = useState(false);
- const navigate = useNavigate();
+  const [colorChange, setColorchange] = useState(false);
 
- const changeNavbarColor = () => {
-   if (window.scrollY >= 80) {
-     setColorchange(true);
-   } else {
-     setColorchange(false);
-   }
- };
- window.addEventListener("scroll", changeNavbarColor);
+  useEffect(() => {
+    if (
+      location.pathname.split("/")[1] === "course" ||
+      location.pathname.split("/")[1] === "about"
+    ) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  }, [location.pathname.split("/")[1]]);
 
-
+  console.log(colorChange, location.pathname.split("/")[1] === "course");
   const [open, setOpen] = useState(false);
   const [openDrawer, closeDrawer] = useState(false);
   return (
-    <div className="nav_bg2 absolute  w-screen text-white flex justify-center z-40 ease-in-out duration-500">
-      <motion.div className="p-5 flex items-center justify-between  gap-x-[5vw] h-[15vh] w-[85%]">
+    <div
+      className={`${
+        colorChange
+          ? "bg-white text-black shadow-lg"
+          : "bg-transparent text-white"
+      } ${
+        location.pathname.split("/")[1] === "login" ? "hidden" : "block"
+      } nav_bg2 absolute w-screen  flex justify-center z-40 ease-in-out duration-500`}
+    >
+      <motion.div className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%]">
         <motion.div>
           <Link to="/home">
             <motion.img
@@ -36,13 +48,13 @@ function Navbar() {
               initial={{ y: -60 }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
-              src={Logo}
+              src={colorChange ? blackLogo : Logo}
             />
           </Link>
         </motion.div>
-        <motion.div className="laptop:flex laptop:gap-x-5  mobile-sm:hidden items-center ">
+        <motion.div className="laptop:flex laptop:gap-x-10 gap-x-5  mobile-sm:hidden items-center font-Ddt ">
           <Link to="/home">
-            <motion.a className="hover:cursor-pointer">Home</motion.a>
+            {/* <motion.a className="hover:cursor-pointer">Home</motion.a> */}
           </Link>
           <Link to="about">
             <motion.a className="hover:cursor-pointer">About</motion.a>
@@ -130,12 +142,12 @@ function Navbar() {
           </Modal>
           <motion.div className="select-none">
             <motion.button
-              className="shadow-inner  border-2 border-sky-500 p-[6px] text-[14px]  rounded-box  w-fit  text-white"
+              className="shadow-inner  border-2 border-sky-500 p-[6px] text-[14px]  rounded-box  w-fit  !text-inherit"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeOut", duration: 3 }}
             >
-              Let's Connect
+              <Link to="login"> Let's Connect</Link>
             </motion.button>
           </motion.div>
         </motion.div>
@@ -152,7 +164,12 @@ function Navbar() {
         width={200}
         onClose={() => closeDrawer(false)}
       >
-        dggdrgfg
+        <div className="flex flex-col gap-y-5">
+          <p>About</p>
+          <p>Courses</p>
+          <p>Contact</p>
+          <p>Let's Connect</p>
+        </div>
       </Drawer>
     </div>
   );

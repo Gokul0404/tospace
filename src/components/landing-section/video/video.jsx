@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Vi from "./vii.mp4";
 import "../about/about.css";
+import {vediodata} from '../video/vediodata'
 import { Link } from "react-router-dom";
 function Video() {
   return (
@@ -70,71 +71,62 @@ function Video() {
 
         <div className="card_part   mobile-sm:pt-[70vh]   mobile-sm:h-[100%] mobile-sm:pb-[2vh] videobg laptop:py-[10vh]">
           <div className="grid laptop:grid-cols-3 gap-10  mt-10 mobile-sm:grid-rows-1">
-            <div>
-              <div class="w-[60%]  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto">
-                <a href="#">
-                  <img
-                    class="rounded-lg p-4"
-                    src="https://www.21kschool.com/blog/wp-content/uploads/2022/09/Top-5-Benefits-of-Co-Curricular-Activities-for-Students.png"
-                    alt=""
-                  />
-                </a>
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:parafont">
-                      Noteworthy technology acquisitions 2021
-                    </h5>
-                  </a>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="w-[60%] m-auto border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    class="rounded-lg p-4"
-                    src="https://www.21kschool.com/blog/wp-content/uploads/2022/09/Top-5-Benefits-of-Co-Curricular-Activities-for-Students.png"
-                    alt=""
-                  />
-                </a>
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:parafont">
-                      Noteworthy technology acquisitions 2021
-                    </h5>
-                  </a>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="w-[60%] m-auto border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img
-                    class="rounded-lg p-4"
-                    src="https://www.21kschool.com/blog/wp-content/uploads/2022/09/Top-5-Benefits-of-Co-Curricular-Activities-for-Students.png"
-                    alt=""
-                  />
-                </a>
-                <div class="p-5">
-                  <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:parafont">
-                      Noteworthy technology acquisitions 2021
-                    </h5>
-                  </a>
-                  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                </div>
-              </div>
-            </div>
+            {vediodata.map((res) => {
+              return (
+                <>
+                  <div className="laptop:basis-1/4 py-5 px-10">
+                    <div
+                      className={`bg-white border border-[#030334]  mobile-sm:w-[80vw]  mobile-md:w-[70vw]  tablet:w-[40vw] laptop:w-[23vw]  rounded-[8px] flex items-center flex-col`}
+                    >
+                      <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black">
+                        <img
+                          src={`${res.img}`}
+                          alt="no"
+                          className="bg-cover h-full w-full "
+                        />
+                      </div>
+                      <div className="text-mes self-start pl-5 pt-3 gap-y-2 flex flex-col ">
+                        <h2 className="font-bold text-paragraph ">
+                          {res.head}
+                        </h2>
+                        <div className="flex  justify-center text-center pt-10 text-[#030334] text-content gap-x-5">
+                          <div className="">
+                            <h2 className="font-bold count  count ">
+                              {res.v1}
+                            </h2>
+                            <p>{res.c1}</p>
+                          </div>
+                          <div>
+                            <h2 className="font-bold  count ">{res.v2}</h2>
+                            <p>{res.c2}</p>
+                          </div>
+                          <div>
+                            <h2 className="font-bold  count">{res.v3}</h2>
+                            <p>{res.c3}</p>
+                          </div>
+                        </div>
+
+                        <div className="py-3">
+                          <p className="pr-5">{res.pera}</p>
+                        </div>
+                      </div>
+                      <di className="flex gap-x-5">
+                        <div className="py-5">
+                          <button className="course_btn1 px-5 py-2">
+                            Get a Quote
+                          </button>
+                        </div>
+                        <div className="py-5">
+                          <button className="course_btn2 px-5 py-2">
+                            Enroll Now
+                          </button>
+                        </div>
+                      </di>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
           </div>
 
           <div className="explore_btn font-Azonix laptop-lg:mt-[5vh] text-center laptop:mt-4 mt-2">

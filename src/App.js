@@ -1,5 +1,7 @@
 
-import Home from "./components/landing-section/home/home";
+// import Home from "./components/landing-section/home/home";
+
+import Home from "../src/components/landing-section/home/home"
 import Viewabout from "./components/about-section/viewabout";
 import Layout from "./components/layout/layout";
 import {
@@ -9,6 +11,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Course from "./components/course/section";
+import Login from "./components/Login/Login";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -16,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="/home" element={<Home />} />
       <Route path="about" element={<Viewabout />} />
       <Route path="course" element={<Course />} />
+      <Route path="login" element={<Login />} />
       {/* <Route path="courses" element={<Course />} />
       <Route path="contact" element={<Contact />} />  */}
     </Route>
