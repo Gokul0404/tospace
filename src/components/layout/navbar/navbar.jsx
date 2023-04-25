@@ -7,7 +7,10 @@ import Logo from "../../landing-section/images/logowhite.png";
 import blackLogo from "../../landing-section/images/logo.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Twitter } from "@mui/icons-material";
 import { Button, TextField } from "@mui/material";
 
 function Navbar() {
@@ -19,7 +22,8 @@ function Navbar() {
   useEffect(() => {
     if (
       location.pathname.split("/")[1] === "course" ||
-      location.pathname.split("/")[1] === "about"
+      location.pathname.split("/")[1] === "about" ||
+      location.pathname.split("/")[1] === "product" 
     ) {
       setColorchange(true);
     } else {
@@ -34,13 +38,13 @@ function Navbar() {
     <div
       className={`${
         colorChange
-          ? "bg-white text-black shadow-lg"
+          ? "bg-white text-black shadow-lg "
           : "bg-transparent text-white"
       } ${
         location.pathname.split("/")[1] === "login" ? "hidden" : "block"
       } nav_bg2 absolute w-screen  flex justify-center z-40 ease-in-out duration-500`}
     >
-      <motion.div className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%]">
+      <motion.div className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%] fontnav">
         <motion.div>
           <Link to="/home">
             <motion.img
@@ -52,7 +56,7 @@ function Navbar() {
             />
           </Link>
         </motion.div>
-        <motion.div className="laptop:flex laptop:gap-x-10 gap-x-5  mobile-sm:hidden items-center font-Ddt ">
+        <motion.div className="laptop:flex laptop:gap-x-10 gap-x-5  mobile-sm:hidden items-center  ">
           <Link to="/home">
             {/* <motion.a className="hover:cursor-pointer">Home</motion.a> */}
           </Link>
@@ -82,17 +86,17 @@ function Navbar() {
                   <p>tospacelearn,Karur</p>
                 </div>
                 <div className="social flex mt-10 gap-x-[5vh] justify-center ">
-                  <div>
-                    <FacebookOutlinedIcon />
+                  <div className="hover:text-in cursor-pointer">
+                    <InstagramIcon />
                   </div>
-                  <div>
-                    <FacebookOutlinedIcon />
+                  <div className="hover:text-fa cursor-pointer">
+                    <FacebookIcon />
                   </div>
-                  <div>
-                    <FacebookOutlinedIcon />
+                  <div className="hover:text-lin cursor-pointer">
+                    <LinkedInIcon />
                   </div>
-                  <div>
-                    <FacebookOutlinedIcon />
+                  <div className="hover:text-twi cursor-pointer">
+                    <Twitter />
                   </div>
                 </div>
               </div>

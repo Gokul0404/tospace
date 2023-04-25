@@ -150,7 +150,7 @@ function Event() {
                 </div>
                 <SwiperSlide>
                   <div className="flex">
-                    <div class="w-[20vw] h-[28vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-[35vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -163,13 +163,13 @@ function Event() {
 
                       <div class="px-5">
                         <a href="#">
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
                             {EventsCard[index === 0 ? 4 : index - 1].title}
                           </h5>
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw]  h-[30vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[29vh]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
+                    <div class="w-[20vw]  h-[37vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[29vh]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -182,13 +182,13 @@ function Event() {
 
                       <div class="px-5">
                         <a href="#">
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
                             {cards.title}
                           </h5>
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw] h-[28vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-[35vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -201,7 +201,7 @@ function Event() {
 
                       <div class="px-5">
                         <a href="#">
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
                             {EventsCard[index === 4 ? 0 : index + 1].title}
                           </h5>
                         </a>

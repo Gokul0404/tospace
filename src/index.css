@@ -9,9 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 * {
-  cursor: url(../src/components/landing-section/images/circle.png) 16 16, auto;
+  /* cursor: url(../src/components/landing-section/images/circle.png) 16 16, auto; */
   scroll-behavior: smooth;
 }
+
 @font-face {
   font-family: Ddt;
   src: url(../public/fonts/DDTHv-Regular.ttf);
@@ -111,13 +112,9 @@ url('../public/courseimg/course.png') ; */
 .swiper-pagination-bullets {
   display: none;
 }
-.cards {
-  background: #000810;
 
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 15px;
-  color: aliceblue;
+.cardbody{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .designation {
   background: rgba(255, 255, 255, 0.35);
@@ -198,3 +195,4 @@ url('../public/courseimg/course.png') ; */
 .parafont {
   color: black !important;
 }
+

@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import Course from "./components/course/section";
 import Login from "./components/Login/Login";
+import Product from "./components/product/product";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
@@ -20,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<Viewabout />} />
       <Route path="course" element={<Course />} />
       <Route path="login" element={<Login />} />
+      <Route path="product" element={<Product/>} />
       {/* <Route path="courses" element={<Course />} />
       <Route path="contact" element={<Contact />} />  */}
     </Route>

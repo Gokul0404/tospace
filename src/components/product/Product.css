@@ -1,0 +1,30 @@
+
+.ant-collapse-header-text{
+    font-size: 18px;
+}
+
+.ant-collapse-arrow {
+font: bold !important;
+  font-size: larger !important;
+}
+
+.ant-collapse-header {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+
+
+
+.iconproduct{
+    color:#9ca3af ;
+    font-size: 19px !important;
+    margin-top: 3px;
+}
+.price{
+    font-size:30px !important ;
+}
+.price_product{
+    font-weight: 700;
+    font-size: 30px;
+}
+

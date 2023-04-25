@@ -1,0 +1,35 @@
+<SwiperSlide>
+                  <div className="flex  justify-around items-center cards p-5  ">
+                    <div className=" ">
+                      <img
+                        src={founder.image}
+                        alt="no"
+                        className="w-[40vh] p-2 rounded-2xl"
+                      />
+                      <div className="header text-para text-center uppercase ">
+                        <h1>{founder.name}</h1>
+                      </div>
+                    </div>
+
+                    <div className="w-[80vh] text-justify">
+                      <h5 className="text-[20px]">{founder.description}</h5>
+                      <div className="social flex mt-5 gap-x-[5vh] justify-center ">
+                        <div className="hover:text-fa cursor-pointer">
+                          {founder.facebook}
+                        </div>
+                        <div className="hover:text-in cursor-pointer">
+                          {founder.Instagram}
+                        </div>
+                        <div className="hover:text-twi cursor-pointer">
+                          {founder.twitter}
+                        </div>
+                        <div className="hover:text-lin cursor-pointer">
+                          {founder.LinkedIn}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="designation text-center text-[30px] py-5  m-auto w-[100vh]">
+                    <h2>{founder.desgination}</h2>
+                  </div>
+                </SwiperSlide>

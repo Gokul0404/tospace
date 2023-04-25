@@ -6,6 +6,7 @@ import Founder from "../landing-section/images/founder.png";
 import { Twitter } from "@mui/icons-material";
 const Founders = [
   {
+    id: 1,
     image: Founder,
     name: "ADDAAN",
     description:
@@ -18,6 +19,7 @@ const Founders = [
   },
 
   {
+    id: 2,
     image: Founder,
     name: "ADDAAN",
     description:
@@ -30,6 +32,7 @@ const Founders = [
   },
 
   {
+    id: 3,
     image: Founder,
     name: "ADDAAN",
     description:
@@ -42,6 +45,7 @@ const Founders = [
   },
 
   {
+    id: 4,
     image: Founder,
     name: "ADDAAN",
     description:
@@ -54,6 +58,7 @@ const Founders = [
   },
 
   {
+    id:5,
     image: Founder,
     name: "ADDAAN",
     description:
@@ -63,6 +68,15 @@ const Founders = [
     twitter: <Twitter />,
     LinkedIn: <LinkedInIcon />,
     desgination: "Co-Founder & CEO at ToSpace",
+  },
+  {
+    id:6,
+  },
+  {
+    id:7,
+  },
+  {
+    id:8,
   },
 ];
 export default Founders;

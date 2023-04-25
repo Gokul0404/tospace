@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Vi from "./vii.mp4";
 import "../about/about.css";
 import {vediodata} from '../video/vediodata'
+// import {coursedata} from '../../course/SectionData'
 import { Link } from "react-router-dom";
 function Video() {
   return (
@@ -117,9 +118,11 @@ function Video() {
                           </button>
                         </div>
                         <div className="py-5">
-                          <button className="course_btn2 px-5 py-2">
-                            Enroll Now
-                          </button>
+                          <Link to="/product" state={{ id: res.id }}>
+                            <button className="course_btn2 px-5 py-2">
+                              Enroll Now
+                            </button>
+                          </Link>
                         </div>
                       </di>
                     </div>

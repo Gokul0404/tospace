@@ -3,7 +3,10 @@ import "../course/Section.css";
 import "../landing-section/about/about.css";
 
 import { coursedata } from "../course/SectionData";
+import { useNavigate, Link, NavLink } from "react-router-dom";
+
 export default function Course() {
+  const navigate = useNavigate();
   const [dragStatus, setdragStatus] = useState(false);
   const [dragData, setDragData] = useState("");
   useEffect(() => {
@@ -34,7 +37,7 @@ export default function Course() {
                   </video>
                 ) : (
                   <img
-                    className="w-[100%] h-[100%] border-[5px] border-black rounded-[20px]"
+                    className="w-[100%] h-[100%] border-[5px]  rounded-[20px]"
                     src="./courseimg/intro.gif"
                     draggable="false"
                   />
@@ -148,9 +151,7 @@ export default function Course() {
                         </div>
 
                         <div className="py-3">
-                          <p className="pr-5">
-                            {res.pera}
-                          </p>
+                          <p className="pr-5">{res.pera}</p>
                         </div>
                       </div>
                       <di className="flex gap-x-5">
@@ -160,9 +161,16 @@ export default function Course() {
                           </button>
                         </div>
                         <div className="py-5">
-                          <button className="course_btn2 px-5 py-2">
-                            Enroll Now
-                          </button>
+                          <Link
+                            to="/product"
+                            state={{
+                              id: res.id,
+                            }}
+                          >
+                            <button className="course_btn2 px-5 py-2">
+                              Enroll Now
+                            </button>{" "}
+                          </Link>
                         </div>
                       </di>
                     </div>

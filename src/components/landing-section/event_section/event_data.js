@@ -3,7 +3,7 @@ const EventsCard = [
   {
     id: 1,
     url: Im,
-    title: "title one",
+    title: "Chettinad College of Engineering & Technology, Karur",
     para: "Instructors   love.Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.Instructors from around the world teach millions of students on Udemy.",
     img: [
       "https://swiperjs.com/demos/images/nature-1.jpg",
@@ -23,7 +23,7 @@ const EventsCard = [
   {
     id: 2,
     url: Im,
-    title: "title two",
+    title: "Chettinad College of Engineering & Technology, Karur",
     img: [
       "https://swiperjs.com/demos/images/nature-1.jpg",
       "https://swiperjs.com/demos/images/nature-2.jpg",
@@ -43,7 +43,7 @@ const EventsCard = [
   {
     id: 3,
     url: Im,
-    title: "title three",
+    title: "Chettinad College of Engineering & Technology, Karur",
     img: [
       "https://swiperjs.com/demos/images/nature-1.jpg",
       "https://swiperjs.com/demos/images/nature-2.jpg",
@@ -63,7 +63,7 @@ const EventsCard = [
   {
     id: 4,
     url: Im,
-    title: "title four",
+    title: "Chettinad College of Engineering & Technology, Karur",
     img: [
       "https://swiperjs.com/demos/images/nature-1.jpg",
       "https://swiperjs.com/demos/images/nature-2.jpg",
@@ -83,7 +83,7 @@ const EventsCard = [
   {
     id: 5,
     url: Im,
-    title: "title five",
+    title: "Chettinad College of Engineering & Technology, Karur",
     img: [
       "https://swiperjs.com/demos/images/nature-1.jpg",
       "https://swiperjs.com/demos/images/nature-2.jpg",

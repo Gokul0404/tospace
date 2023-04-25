@@ -1,3 +1,9 @@
-.loginshadow{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.loginshadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.anticon.ant-input-password-icon:hover{
+  color: #2828a0 !important;
+}
+.ant-input-affix-wrapper:focus {
+  border: 1px solid red !important;
 }

@@ -11,7 +11,7 @@ function Career() {
       <div className="career laptop: desktop-lg: careerbg  laptop:block mobile-sm:hidden">
         <div className="career_heading ">
           <h2 className="text-para fontbold text-fblue p-[10vh] text-center">
-            Lanch Your Career
+            Launch Your Career
           </h2>
         </div>
 
