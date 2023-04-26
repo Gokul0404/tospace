@@ -77,7 +77,7 @@ function Video() {
                 <>
                   <div className="laptop:basis-1/4 py-5 px-10">
                     <div
-                      className={`bg-white border border-[#030334]  mobile-sm:w-[80vw]  mobile-md:w-[70vw]  tablet:w-[40vw] laptop:w-[23vw]  rounded-[8px] flex items-center flex-col`}
+                      className={`bg-white border border-black  mobile-sm:w-[80vw]  mobile-md:w-[70vw]  tablet:w-[40vw] laptop:w-[23vw] laptop:h-[500px] rounded-[8px] flex items-center flex-col`}
                     >
                       <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black">
                         <img
@@ -86,41 +86,41 @@ function Video() {
                           className="bg-cover h-full w-full "
                         />
                       </div>
-                      <div className="text-mes self-start pl-5 pt-3 gap-y-2 flex flex-col ">
+                      <div className="text-mes self-start px-5 pt-3 gap-y-2 flex flex-col ">
                         <h2 className="font-bold text-paragraph ">
                           {res.head}
                         </h2>
-                        <div className="flex  justify-center text-center pt-10 text-[#030334] text-content gap-x-5">
+                        <div className="flex  justify-center text-center pt-10 text-[#277de0] text-content gap-x-5">
                           <div className="">
                             <h2 className="font-bold count  count ">
                               {res.v1}
                             </h2>
-                            <p>{res.c1}</p>
+                            <p className="text-black">{res.c1}</p>
                           </div>
                           <div>
                             <h2 className="font-bold  count ">{res.v2}</h2>
-                            <p>{res.c2}</p>
+                            <p className="text-black">{res.c2}</p>
                           </div>
                           <div>
                             <h2 className="font-bold  count">{res.v3}</h2>
-                            <p>{res.c3}</p>
+                            <p className="text-black">{res.c3}</p>
                           </div>
                         </div>
 
                         <div className="py-3">
-                          <p className="pr-5">{res.pera}</p>
+                          <p className="">{res.pera}</p>
                         </div>
                       </div>
                       <di className="flex gap-x-5">
-                        <div className="py-5">
+                        {/* <div className="py-5">
                           <button className="course_btn1 px-5 py-2">
                             Get a Quote
                           </button>
-                        </div>
+                        </div> */}
                         <div className="py-5">
                           <Link to="/product" state={{ id: res.id }}>
                             <button className="course_btn2 px-5 py-2">
-                              Enroll Now
+                              Register
                             </button>
                           </Link>
                         </div>

@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Aboutim from "../landing-section/images/abour-view.png";
-
+import "../about-section/aboutse.css";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation, FreeMode, Autoplay } from "swiper";
+
 import Founders from "./founders.js";
-import Experts from  '../about-section/experts'
-import { LinkedinOutlined } from "@ant-design/icons";
+import { get } from "lodash";
+import Experts from "../about-section/experts";
 
 function Viewabout() {
+
+
+  const [teamStatus, setTeamStatus] = useState(0);
+  const [founters, setFounders] = useState(0);
+
   return (
     <>
       <div className="bg-white h-[100%] text-black p-[10vh] pt-[8%]">
@@ -102,12 +106,20 @@ function Viewabout() {
         </div>
         {/* our team */}
 
-        <div className="grid grid-cols-2  items-center">
-          <div className="gap-x-5  justify-center flex-wrap grid grid-cols-4">
+        <div className="grid grid-cols-2  items-center ">
+          <div className="gap-x-5  justify-center flex-wrap grid grid-cols-4 ">
             {Founders.map((founder) => {
               return (
                 <div className=" pt-5 flex flex-col ">
-                  <div className="bg-black w-[150px] h-[150px] rounded-full "></div>
+                  <div className="bg-black w-[150px] h-[150px] rounded-full overflow-hidden">
+                    <img
+                      src={founder.image}
+                      className="imagese"
+                      onMouseOver={() => {
+                        setTeamStatus(founder.id - 1);
+                      }}
+                    ></img>
+                  </div>
                   <img
                     src="./linkedin.png"
                     className="w-[18px] pt-2 ml-[65px] cursor-pointer"
@@ -117,15 +129,11 @@ function Viewabout() {
             })}
           </div>
           <div>
-            <div className="flex items-center text-center flex-col ">
-              <h2 className="text-[30px] font-bold">Adnaan M</h2>
-              <p className="w-[70%] ">
-                Co-Founder and Chief Executive Officer of ToSpace. 20-year-old
-                passionate about exploring space and making it accessible e all
-                possible ways. His boundless mission drives Tospace to a
-                flourishing future, As a whole an ever-fighting warrior and
-                mission to contribute to the global economy of our nation.
-              </p>
+            <div className="flex items-center text-center flex-col cont  ">
+              <h2 className="text-[30px] font-bold">
+                {Founders[teamStatus].name}
+              </h2>
+              <p className="w-[70%] ">{Founders[teamStatus].description}</p>
             </div>
           </div>
         </div>
@@ -133,13 +141,21 @@ function Viewabout() {
           <div className="header text-para mt-8">
             <h1>OUR EXPERTS</h1>
           </div>
-
+          {/* our Experts */}
           <div className="grid grid-cols-2  items-center ">
             <div className="  justify-center flex-wrap grid grid-cols-3 w-[78%]">
               {Experts.map((founder) => {
                 return (
                   <div className=" pt-5 flex flex-col ">
-                    <div className="bg-black w-[150px] h-[150px] rounded-full "></div>
+                    <div className="bg-black w-[150px] h-[150px] rounded-full overflow-hidden">
+                      <img
+                        src={founder.image}
+                        className="imagese"
+                        onMouseOver={() => {
+                          setFounders(founder.id - 1);
+                        }}
+                      ></img>
+                    </div>
                     <img
                       src="./linkedin.png"
                       className="w-[18px] pt-2 ml-[65px] cursor-pointer"
@@ -150,14 +166,10 @@ function Viewabout() {
             </div>
             <div>
               <div className="flex items-center text-center flex-col ">
-                <h2 className="text-[30px] font-bold">Adnaan M</h2>
-                <p className="w-[70%] ">
-                  Co-Founder and Chief Executive Officer of ToSpace. 20-year-old
-                  passionate about exploring space and making it accessible e
-                  all possible ways. His boundless mission drives Tospace to a
-                  flourishing future, As a whole an ever-fighting warrior and
-                  mission to contribute to the global economy of our nation.
-                </p>
+                <h2 className="text-[30px] font-bold">
+                  {Experts[founters].name}
+                </h2>
+                <p className="w-[70%] ">{Experts[founters].description}</p>
               </div>
             </div>
           </div>

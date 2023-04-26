@@ -56,7 +56,7 @@ function About() {
             <button className="ab_btn">View More</button>
           </div>
         </div>
-        <div className="absolute left-0 top-16">
+        <div className="absolute left-0 top-8">
           <motion.img
             src={"./moon.png"}
             alt=""
@@ -105,10 +105,10 @@ function About() {
           </SwiperSlide>
         ))}
       </Swiper> */}
-      <div className="sponsor_content text-center mt-[5vh]">
+      <div className="sponsor_content text-center mt-[15vh]">
         <h3 className="fontbold laptop:text-[24px] text-fblue mobile-sm:text-desk pb-5">
           {" "}
-          Trusted by 10+ Companies Worldwide
+          Trusted By Our Cliente 
         </h3>
       </div>
     </div>

@@ -8,75 +8,62 @@ const Founders = [
   {
     id: 1,
     image: Founder,
-    name: "ADDAAN",
+    name: "Adnaan M",
     description:
-      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation. Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
-    facebook: <FacebookOutlinedIcon />,
-    Instagram: <InstagramIcon />,
-    twitter: <Twitter />,
-    LinkedIn: <LinkedInIcon />,
-    desgination: "Co-Founder & CEO at ToSpace",
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
   },
 
   {
     id: 2,
     image: Founder,
-    name: "ADDAAN",
+    name: "Ram M",
     description:
-      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation. Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
-    facebook: <FacebookOutlinedIcon />,
-    Instagram: <InstagramIcon />,
-    twitter: <Twitter />,
-    LinkedIn: <LinkedInIcon />,
-    desgination: "Co-Founder & CEO at ToSpace",
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
   },
 
   {
     id: 3,
     image: Founder,
-    name: "ADDAAN",
+    name: "Ajay M",
     description:
-      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation. Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
-    facebook: <FacebookOutlinedIcon />,
-    Instagram: <InstagramIcon />,
-    twitter: <Twitter />,
-    LinkedIn: <LinkedInIcon />,
-    desgination: "Co-Founder & CEO at ToSpace",
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
   },
 
   {
     id: 4,
     image: Founder,
-    name: "ADDAAN",
+    name: "Sham M",
     description:
-      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation. Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
-    facebook: <FacebookOutlinedIcon />,
-    Instagram: <InstagramIcon />,
-    twitter: <Twitter />,
-    LinkedIn: <LinkedInIcon />,
-    desgination: "Co-Founder & CEO at ToSpace",
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
   },
 
   {
-    id:5,
+    id: 5,
     image: Founder,
-    name: "ADDAAN",
+    name: "Ravi M",
+    description:
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
+  },
+  {
+    id: 6,
+    image: Founder,
+    name: "Prakash M",
+    description:
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
+  },
+  {
+    id: 7,
+    image: Founder,
+    name: "Adnaan M",
     description:
       "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation. Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
-    facebook: <FacebookOutlinedIcon />,
-    Instagram: <InstagramIcon />,
-    twitter: <Twitter />,
-    LinkedIn: <LinkedInIcon />,
-    desgination: "Co-Founder & CEO at ToSpace",
   },
   {
-    id:6,
-  },
-  {
-    id:7,
-  },
-  {
-    id:8,
+    id: 8,
+    image: Founder,
+    name: "Adnaan M",
+    description:
+      "Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation. Co-Founder and Chief Executive Officer of ToSpace. 20-year-old passionate about exploring space and making it accessible e all possible ways. His boundless mission drives Tospace to a flourishing future, As a whole an ever-fighting warrior and mission to contribute to the global economy of our nation.",
   },
 ];
 export default Founders;

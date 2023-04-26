@@ -14,7 +14,7 @@ export default function Course() {
   }, []);
   console.log(dragData.split("."));
   return (
-    <div id="course">
+    <div id="course ">
       <div className="bg-white w-screen  pt-[13vh] ">
         <div className="w-screen bg-white py-6 course_bg_img" draggable="false">
           <div className="flex justify-start pl-[10%] gap-x-[3%] ">
@@ -46,7 +46,7 @@ export default function Course() {
             </div>
 
             {/* tool */}
-            <div className="w-[10vw] h-[80vh] relative flex justify-center items-center">
+            <div className="w-[10vw] h-[80vh]  flex justify-center items-center">
               <div className="w-[100%]  flex justify-center flex-col items-center gap-5 text-center text-white">
                 <div
                   className="w-[70px] h-[65px]  bg-gray-600 tools rounded-md"
@@ -118,49 +118,50 @@ export default function Course() {
             {coursedata.map((res) => {
               return (
                 <>
-                  <div className="laptop:basis-1/4 py-10 px-10">
+                  <div className="laptop:basis-1/4 py-10 px-10 relative">
                     <div
-                      className={`bg-white border border-[#030334]  mobile-sm:w-[80vw]  mobile-md:w-[70vw]  tablet:w-[40vw] laptop:w-[23vw]  rounded-[8px] flex items-center flex-col`}
+                      className={`bg-white  coursebr border-4 border-black  mobile-sm:w-[80vw]  mobile-md:w-[70vw]  tablet:w-[40vw] laptop:h-[550px] laptop:w-[23vw]  rounded-[8px] flex items-center flex-col overflow-hidden`}
                     >
-                      <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black">
+                      {/* <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black"> */}
+                      <div className="bg-gray-400 w-[100%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[100%] laptop:w-[22.9vw] laptop:h-[50vh]  overflow-hidden border-[2px] !border-x-0 border-y-0 ">
                         <img
                           src={`${res.img}`}
                           alt="no"
                           className="bg-cover h-full w-full "
                         />
                       </div>
-                      <div className="text-mes self-start pl-5 pt-3 gap-y-2 flex flex-col ">
+                      <div className="text-mes self-start px-5 pt-3 gap-y-2 flex flex-col ">
                         <h2 className="font-bold text-paragraph ">
                           {res.head}
                         </h2>
-                        <div className="flex  justify-center text-center pt-10 text-[#030334] text-content gap-x-5">
+                        <div className="flex  justify-center text-center pt-10 text-[#277de0] text-content gap-x-5">
                           <div className="">
                             <h2 className="font-bold count  count ">
                               {res.v1}
                             </h2>
-                            <p>{res.c1}</p>
+                            <p className="text-black">{res.c1}</p>
                           </div>
                           <div>
                             <h2 className="font-bold  count ">{res.v2}</h2>
-                            <p>{res.c2}</p>
+                            <p className="text-black">{res.c2}</p>
                           </div>
                           <div>
                             <h2 className="font-bold  count">{res.v3}</h2>
-                            <p>{res.c3}</p>
+                            <p className="text-black">{res.c3}</p>
                           </div>
                         </div>
 
                         <div className="py-3">
-                          <p className="pr-5">{res.pera}</p>
+                          <p className="pb-5">{res.pera}</p>
                         </div>
                       </div>
-                      <di className="flex gap-x-5">
-                        <div className="py-5">
+                      <di className="flex  justify-center items-center gap-x-5">
+                        {/* <div className="py-5">
                           <button className="course_btn1 px-5 py-2">
                             Get a Quote
                           </button>
-                        </div>
-                        <div className="py-5">
+                        </div> */}
+                        <div className="py-5  absolute bottom-0 ">
                           <Link
                             to="/product"
                             state={{
@@ -168,7 +169,7 @@ export default function Course() {
                             }}
                           >
                             <button className="course_btn2 px-5 py-2">
-                              Enroll Now
+                              Register
                             </button>{" "}
                           </Link>
                         </div>

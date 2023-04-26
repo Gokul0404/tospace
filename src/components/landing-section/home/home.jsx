@@ -23,7 +23,7 @@ function Home() {
       <motion.div className="home ease-in-out duration-700" id="home">
         <motion.div className="items-start    h-screen   space-y-10 flex ">
           {/* <motion.img className="w-[45%] 4k:w-[40%] select-none" src={Title} /> */}
-          <motion.div className=" w-[40%] h-[60vh] pl-[9%]">
+          <motion.div className=" w-[35%] h-[60vh] pl-[5%]">
             <motion.p className="font-bold text-head  w-[80%] pt-[30%]">
               Inspire Innovate Ignite
             </motion.p>

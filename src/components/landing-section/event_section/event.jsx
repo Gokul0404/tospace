@@ -61,6 +61,7 @@ function Event() {
                             <img
                               src={cards.img[0]}
                               className="!w-inherit h-inherit object-cover"
+                              alt="img"
                             />
                           </div>
                           <div className="text-black flex flex-row gap-x-1">
@@ -68,6 +69,7 @@ function Event() {
                               <img
                                 src={cards.img[1]}
                                 className="!w-inherit h-inherit object-cover"
+                                alt="img"
                               />
                             </div>
 
@@ -75,6 +77,7 @@ function Event() {
                               <img
                                 src={cards.img[2]}
                                 className="!w-[100%] h-[100%] object-cover"
+                                alt="img"
                               />
                             </div>
                           </div>
@@ -90,24 +93,28 @@ function Event() {
                               <img
                                 src={cards.img[3]}
                                 className="!w-inherit h-inherit object-cover"
+                                alt="img"
                               />
                             </div>
                             <div className="text-black bg-slate-700 w-[120px] h-[157px]  overflow-hidden desktop-lg:w-[150px] ">
                               <img
                                 src={cards.img[4]}
                                 className="!w-inherit !h-[100%] !object-cover"
+                                alt="img"
                               />
                             </div>
                             <div className="text-black bg-slate-700 w-[120px] h-[107px]   overflow-hidden  desktop-lg:w-[160px]  ">
                               <img
                                 src={cards.img[5]}
                                 className="!w-inherit !h-inherit object-cover"
+                                alt="img"
                               />
                             </div>
                             <div className="text-black bg-slate-700 w-[110px] h-[91px] overflow-hidden desktop-lg:w-[140px] ">
                               <img
                                 src={cards.img[6]}
                                 className="!w-inherit h-inherit object-cover"
+                                alt="img"
                               />
                             </div>
                           </div>
@@ -117,27 +124,41 @@ function Event() {
                         <div className="w-[35vw]   ">
                           <div className="section_3 flex flex-row gap-x-1">
                             <div className="text-black bg-slate-700 w-[160px] h-[93px] overflow-hidden">
-                              <img src={cards.img[7]} className="!w-inherit" />
+                              <img
+                                src={cards.img[7]}
+                                className="!w-inherit"
+                                alt="img"
+                              />
                             </div>
                             <div className="text-black bg-slate-700 w-[212px] h-[129px] overflow-hidden">
-                              <img src={cards.img[8]} className="!w-inherit" />
+                              <img
+                                src={cards.img[8]}
+                                className="!w-inherit"
+                                alt="img"
+                              />
                             </div>
                             <div className="flexible flex flex-col gap-y-1">
                               <div className="text-black bg-slate-700 w-[146px] h-[52px] overflow-hidden">
                                 <img
                                   src={cards.img[9]}
                                   className="!w-inherit"
+                                  alt="img"
                                 />
                               </div>
                               <div className="text-black bg-slate-700 w-[146px] h-[89px] overflow-hidden">
                                 <img
                                   src={cards.img[10]}
                                   className="!w-inherit"
+                                  alt="img"
                                 />
                               </div>
                             </div>
                             <div className="text-black bg-slate-700 w-[146px] h-[80px] overflow-hidden">
-                              <img src={cards.img[11]} className="!w-inherit" />
+                              <img
+                                src={cards.img[11]}
+                                className="!w-inherit"
+                                alt="img"
+                              />
                             </div>
                           </div>
                         </div>
@@ -156,7 +177,7 @@ function Event() {
                           <img
                             class="p-1 h-[23vh] w-[100%]"
                             src={cards.url}
-                            alt=""
+                            alt="img"
                           />
                         </a>
                       </div>
@@ -175,7 +196,7 @@ function Event() {
                           <img
                             class="p-1 h-[25vh] w-[100%]"
                             src={cards.url}
-                            alt=""
+                            alt="img"
                           />
                         </a>
                       </div>
@@ -194,7 +215,7 @@ function Event() {
                           <img
                             class="p-1 h-[23vh] w-[100%]"
                             src={cards.url}
-                            alt=""
+                            alt="img"
                           />
                         </a>
                       </div>

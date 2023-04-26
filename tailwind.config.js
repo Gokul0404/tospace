@@ -47,7 +47,7 @@ module.exports = {
         Ddt: ["Ddt"],
       },
       colors: {
-        fblue: "#030334",
+        fblue: "black",
         in: "#C13584",
         fa: " #1877F2",
         lin: "#0A66C2",
