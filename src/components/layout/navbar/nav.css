@@ -1,4 +1,37 @@
-.fontnav{
-/* font-family: 'Archivo', sans-serif; */
-font-size: 16px;
+.fontnav {
+  /* font-family: 'Archivo', sans-serif; */
+  font-size: 16px;
+}
+
+:where(.css-dev-only-do-not-override-mxhywb).ant-select-single:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  width: 250px;
+  height: 38px;
+
+  /* margin-top: 22px; */
+}
+
+.ant-modal-content {
+  background: rgb(130, 129, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(130, 129, 130, 1) 0%,
+    rgba(255, 255, 255, 1) 96%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.ant-select-arrow {
+  margin-top: -18px !important;
+  color: black !important;
+}
+
+.ant-form-item-control-input-content input::placeholder {
+  color: black !important;
+}
+
+.ant-select-selection-placeholder {
+  color: black !important;
 }

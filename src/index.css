@@ -129,9 +129,7 @@ url('../public/courseimg/course.png') ; */
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
 }
-.ant-modal-content {
-  background: #000810 !important;
-}
+
 .ant-modal-close {
   display: none;
 }

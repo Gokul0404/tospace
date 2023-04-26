@@ -31,7 +31,7 @@ export default function Product() {
     Agegroup,
     language,
     Level,
-    img,
+    img2,
   } = get(pageData, "[0]", "");
   // get the data in onclick up
 
@@ -41,7 +41,7 @@ export default function Product() {
         <div className="mt-[120px] mobile-md:flex mobile-md:flex-col mobile-md:justify-center mobile-md:items-center laptop:flex  laptop:flex-row ">
           <div className="mobile-sm:h-[70vh] mobile-sm:py-5 laptop:w-[80vw] desktop-lg-4k:h-[100vh]">
             <img
-              src={img}
+              src={img2}
               className=" mobile-sm:h-[100%] mobile-sm:w-screen  laptop:w-[95%] desktop-lg-4k:h-[80%]"
             ></img>
           </div>

@@ -168,7 +168,7 @@ export default function Course() {
                               id: res.id,
                             }}
                           >
-                            <button className="course_btn2 px-5 py-2">
+                            <button className="course_btn2 px-5 py-2 ">
                               Register
                             </button>{" "}
                           </Link>

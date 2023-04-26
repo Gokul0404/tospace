@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Modal, Drawer } from "antd";
+import { Modal, Drawer, Form, Input, Select } from "antd";
 import "../navbar/nav.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../landing-section/images/logowhite.png";
@@ -16,14 +16,14 @@ import { Button, TextField } from "@mui/material";
 function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
-
+  const { Option } = Select;
   const [colorChange, setColorchange] = useState(false);
 
   useEffect(() => {
     if (
       location.pathname.split("/")[1] === "course" ||
       location.pathname.split("/")[1] === "about" ||
-      location.pathname.split("/")[1] === "product" 
+      location.pathname.split("/")[1] === "product"
     ) {
       setColorchange(true);
     } else {
@@ -73,75 +73,150 @@ function Navbar() {
             Contact
           </motion.a>
           <Modal width={850} open={open} footer={false}>
-            <div className="flex justify-around text-white items-center pt-10">
-              <div>
-                <h1 className="text-white text-icon uppercase">get a quote</h1>
-                <p className="text-white pt-2">
-                  Fill up the form and our team will get back to you within 24
-                  hours
-                </p>
-                <div className="info mt-10 space-y-10">
-                  <p>+91 987654321</p>
-                  <p>hello@tospacelearn.com</p>
-                  <p>tospacelearn,Karur</p>
-                </div>
-                <div className="social flex mt-10 gap-x-[5vh] justify-center ">
-                  <div className="hover:text-in cursor-pointer">
-                    <InstagramIcon />
-                  </div>
-                  <div className="hover:text-fa cursor-pointer">
-                    <FacebookIcon />
-                  </div>
-                  <div className="hover:text-lin cursor-pointer">
-                    <LinkedInIcon />
-                  </div>
-                  <div className="hover:text-twi cursor-pointer">
-                    <Twitter />
-                  </div>
-                </div>
-              </div>
-              <div className="w-[300px] h-[400px] shadow-2xl bg-white rounded-2xl">
-                <div className="form p-10 text-black">
-                  <form action="" method="post">
-                    <div className="name pb-3">
-                      <TextField
-                        id="outlined-basic"
-                        label="Name"
-                        variant="outlined"
-                        size="small"
-                      />
-                    </div>
-                    <div className="email pb-3">
-                      <TextField
-                        id="outlined-basic"
-                        label="Email"
-                        variant="outlined"
-                        size="small"
-                      />
-                    </div>
-                    <div className="message">
-                      <TextField
-                        id="outlined-basic"
-                        label="Message"
-                        variant="outlined"
-                        rows={6}
-                        fullWidth
-                        multiline
-                        size="small"
-                      />
-                    </div>
-                    <div className="submit text-center mt-5">
-                      <Button variant="contained">Send Message</Button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div>
+            <div className=" contactbg text-white items-center ">
+              <div className="w-[100%] flex">
+                <h2 className="text-[30px] text-black py-5 ml-[5%] font-bold">
+                  Get in touch with us to learn more!
+                </h2>
                 <CloseIcon
                   onClick={() => setOpen(false)}
-                  className="cursor-pointer"
+                  className="cursor-pointer absolute right-8 hover:text-red-600 text-black"
                 />
+                <div></div>{" "}
               </div>
+              <Form
+                layout="vertical"
+                className="!w-[90%]  flex flex-col justify-center items-center"
+              >
+                <div className="grid grid-cols-2 gap-x-10">
+                  {/* <div className="px-5"> */}
+                  <Form.Item
+                    rules={[
+                      { required: true, message: "Please enter your name" },
+                      { type: "name", message: "Please enter valid name" },
+                    ]}
+                    name="name"
+                  >
+                    <Input
+                      placeholder="Name"
+                      className="!h-[38px] !w-[250px]  hover:!border-2 "
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    rules={[
+                      {
+                        required: true,
+                        message: "Please enter your designation",
+                      },
+                      {
+                        type: "designation",
+                        message: "Please enter valid email",
+                      },
+                    ]}
+                    name="designation"
+                  >
+                    <Input
+                      placeholder="Designation"
+                      className="!h-[38px] !w-[250px]   hover:!border-2  "
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    rules={[
+                      { required: true, message: "Please enter your Number" },
+                      {
+                        type: "phone",
+                      
+                      },
+                      {
+                        pattern: /^(?:\d*)$/,
+                        message: "Value should contain just number",
+                      },
+                      {
+                        pattern: /^[\d]{0,10}$/,
+                        message: "Value should be less than 10 character",
+                      },
+                    ]}
+                    name="phone"
+                  >
+                    <Input
+                      placeholder="Number"
+                      className="!h-[38px] !w-[250px]   hover:!border-2  "
+                    />
+                  </Form.Item>
+                  <Form.Item
+                    className="!w-[250px]  "
+                    name={["address1", "province1"]}
+                    noStyle
+                    rules={[
+                      { required: true, message: "Province is required" },
+                    ]}
+                  >
+                    <Select placeholder="Department">
+                      <Option value="Teacher">Teacher</Option>
+                      <Option value="Teacher">Parent</Option>
+                      <Option value="Student">Student</Option>
+
+                      <Option value="Other">Other</Option>
+                    </Select>
+                  </Form.Item>
+                  <Form.Item
+                    rules={[
+                      { required: true, message: "Please enter your email" },
+                      { type: "email", message: "Please enter valid email" },
+                    ]}
+                    name="email"
+                  >
+                    <Input
+                      placeholder="Email"
+                      className="!h-[38px] !w-[250px]   hover:!border-2 "
+                    />
+                  </Form.Item>
+                  {/* </div> */}
+                  {/* <div className="px-5 !p-0"> */}
+
+                  <Form.Item
+                    className="!w-[250px] "
+                    name={["address", "province"]}
+                    noStyle
+                    rules={[
+                      { required: true, message: "Province is required" },
+                    ]}
+                  >
+                    <Select placeholder="Select">
+                      <Option value="Electron Module">Electron Module</Option>
+                      <Option value="Gravity Module">Gravity Module</Option>
+                      <Option value="CubeSat 1">CubeSat 1 </Option>
+                      <Option value="Cubesat Mini 1">Cubesat Mini 1</Option>
+                      <Option value="Cubesat Mini 2">Cubesat Mini 2</Option>
+                      <Option value="Cubesat Mini 2">Other</Option>
+                    </Select>
+                  </Form.Item>
+                  {/* </div> */}
+                </div>
+                <Form.Item
+                  rules={[
+                    { required: true, message: "Please enter your Number" },
+                    {
+                      type: "message",
+                      message: "Please enter your Message",
+                    },
+                  ]}
+                  name="message"
+                >
+                  <Input
+                    placeholder="Message"
+                    className="!h-[90px] !w-[540px]   hover:!border-2 "
+                  />
+                </Form.Item>
+                <div className="w-[100%]">
+                  <button
+                    htmlType="submit"
+                    className=" course_btn2 text-white uppercase text-sm font-semibold px-4 py-2 rounded ml-[90px]"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </Form>
             </div>
           </Modal>
           <motion.div className="select-none">

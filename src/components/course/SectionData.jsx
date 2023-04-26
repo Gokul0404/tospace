@@ -2,7 +2,7 @@ export const coursedata = [
   {
     id: 1,
     img: "./courseimg/course.jpg",
-    imgpro: "./courseimg/course.jpg",
+    img2: "./courseimg/course1.jpg",
     head: "3D Printing",
     v1: "25+",
     v2: "5+",
@@ -23,6 +23,7 @@ export const coursedata = [
   {
     id: 2,
     img: "./courseimg/course2.jpg",
+    img2: "./courseimg/course2.jpg",
     head: "DIY Science-Senior",
     v1: "25+",
     v2: "5+",
@@ -42,6 +43,7 @@ export const coursedata = [
   {
     id: 3,
     img: "./courseimg/course3.jpg",
+    img2: "./courseimg/course3.jpg",
     head: "Glider Junior",
     v1: "25+",
     v2: "5+",
@@ -61,6 +63,7 @@ export const coursedata = [
   {
     id: 4,
     img: "./courseimg/course4.jpg",
+    img2: "./courseimg/course4.jpg",
     head: "App Develop",
     v1: "25+",
     v2: "5+",
@@ -82,6 +85,7 @@ export const coursedata = [
   {
     id: 5,
     img: "./courseimg/course5.jpg",
+    img2: "./courseimg/course5.jpg",
     head: "Scratch Junior",
     v1: "25+",
     v2: "5+",

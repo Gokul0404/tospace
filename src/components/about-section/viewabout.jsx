@@ -150,7 +150,7 @@ function Viewabout() {
                     <div className="bg-black w-[150px] h-[150px] rounded-full overflow-hidden">
                       <img
                         src={founder.image}
-                        className="imagese"
+                        className=""
                         onMouseOver={() => {
                           setFounders(founder.id - 1);
                         }}
