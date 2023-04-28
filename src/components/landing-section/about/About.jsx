@@ -60,7 +60,7 @@ function About() {
           <motion.img
             src={"./moon.png"}
             alt=""
-            className=" mobile-lg:w-[45%]  mobile-lg:h-[30%] mobile-sm:hidden laptop:block  "
+            className=" mobile-lg:w-[45%]  mobile-lg:h-[30%] desktop-lg:w-[55%] desktop-lg-4k:w-[65%] mobile-sm:hidden laptop:block  "
 
             //mobile-lg:w-[45%]  mobile-lg:h-[30%]  mobilemax:w-[30%]
             // initial={{ opacity: 0 }}

@@ -89,7 +89,7 @@ function Event() {
                         {/* 2nd */}
                         <div className="w-[40vw] ">
                           <div className="section_2 flex flex-row gap-x-1 items-end justify-start">
-                            <div className="text-black bg-slate-700 w-[90px] h-[80px] laptop:mt-[18.5vh] overflow-hidden desktop-lg:mt-[15vh] desktop-lg:mt-[16.65vh] desktop-lg-4k:w-[120px]">
+                            <div className="text-black bg-slate-700 w-[90px] h-[80px] laptop:mt-[18.5vh] overflow-hidden  desktop-lg:mt-[16.65vh] desktop-lg-4k:w-[120px]">
                               <img
                                 src={cards.img[3]}
                                 className="!w-inherit h-inherit object-cover"
@@ -171,7 +171,7 @@ function Event() {
                 </div>
                 <SwiperSlide>
                   <div className="flex">
-                    <div class="w-[20vw] h-fit desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-fit desktop-lg-4k:w-[15vw]    border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -190,7 +190,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw]  h-fit desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[29vh]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
+                    <div class="w-[20vw]  h-fit desktop-lg-4k:w-[15vw]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -209,7 +209,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw] h-fit desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-fit desktop-lg-4k:w-[15vw]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img
