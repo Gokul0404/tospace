@@ -30,7 +30,7 @@ module.exports = {
       "tabletmax": { 'max': "700px" },
       "mobilemax": { 'max': "500px" },
       laptop: "1024px",
-
+laptopad:"1179px",
       "laptop-lg": "1440px",
 
       desktop: "1280px",
