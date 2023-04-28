@@ -113,7 +113,7 @@ function Video() {
                         </div>
 
                         <div className="py-3">
-                          <p className="">{res.pera}</p>
+                          <p className="text-justify">{res.pera}</p>
                         </div>
                       </div>
                       <di className="flex gap-x-5">

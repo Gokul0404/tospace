@@ -78,7 +78,7 @@ function Navbar() {
           {open && <Contact open={open} setOpen={setOpen} />}
           <motion.div className="select-none">
             <motion.button
-              className="shadow-inner  border-2 border:white hover:border-[#277de0] p-[6px] text-[16px]  rounded-box  w-fit  !text-inherit"
+              className="shadow-inner  border-2 border:white hover:border-[#277de0] p-[6px] navlet  rounded-box  w-fit  !text-inherit"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeOut", duration: 3 }}

@@ -18,9 +18,12 @@ export default function Course() {
   return (
     <div id="course ">
       <div className="bg-white w-screen  pt-[11.5vh] ">
-        <div className="w-screen bg-white py-6 course_bg_img mobile-sm:flex mobile-sm:justify-center laptop:flex-none"  draggable="false">
-          <div className="laptop:flex justify-start laptop:pl-[10%] gap-x-[3%] ">
-            <div className=" laptop:w-[70vw] h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
+        <div
+          className="w-screen bg-white py-6 course_bg_img mobile-sm:flex mobile-sm:justify-center laptop:flex-none"
+          draggable="false"
+        >
+          <div className="laptop:flex justify-start laptop:pl-[5%] gap-x-[3%] ">
+            <div className=" mobile-sm:w-[90vw] mobile-sm:h-[40vh] tablet:h-[50vh] laptop:w-[80vw] laptop:h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
               {/* screen */}
               {console.log(dragData)}
               <div
@@ -33,7 +36,7 @@ export default function Course() {
                     autoPlay
                     muted
                     loop
-                    className=" object-cover"
+                    className="w-[100%] h-[100%]  object-cover border-[5px] rounded-[20px]"
                   >
                     <source src={dragData} />
                   </video>
@@ -48,10 +51,10 @@ export default function Course() {
             </div>
 
             {/* tool */}
-            <div className=" mobile-sm:w-[100%]  relative laptop:w-[10vw] mobile-sm:h-[10vh] laptop:h-[80vh]  flex justify-center items-center">
-              <div className="w-[100%] mobile-sm:absolute mobile-sm:top-5  flex justify-center mobile-sm:flex-row laptop:flex-col items-center gap-5 text-center text-white">
+            <div className=" mobile-sm:w-[100%]  relative laptop:w-[10vw] mobile-sm:h-[10vh] laptop:h-[100vh]  flex justify-center items-center">
+              <div className="w-[100%] laptop:h-[70vh] mobile-sm:absolute mobile-sm:top-5  flex justify-center mobile-sm:flex-row laptop:flex-col items-center gap-5 text-center text-white">
                 <div
-                  className="w-[70px] h-[65px]  bg-gray-600 tools rounded-md"
+                  className="mobile-sm:w-[45px] mobile-sm:h-[45px] tablet:w-[70px] tablet:h-[65px]  bg-gray-600 tools rounded-md"
                   draggable="true"
                   onDragStart={() => {
                     setdragStatus(false);
@@ -63,7 +66,7 @@ export default function Course() {
                   first
                 </div>
                 <div
-                  className="w-[70px] h-[65px] bg-gray-600 rounded-md tools"
+                  className="mobile-sm:w-[45px] mobile-sm:h-[45px] tablet:w-[70px] tablet:h-[65px] bg-gray-600 rounded-md tools"
                   draggable="true"
                   onDragStart={() => {
                     setdragStatus(false);
@@ -73,7 +76,7 @@ export default function Course() {
                   second
                 </div>
                 <div
-                  className="w-[70px] h-[65px] bg-gray-600  rounded-md tools"
+                  className="mobile-sm:w-[45px] mobile-sm:h-[45px] tablet:w-[70px] tablet:h-[65px] bg-gray-600  rounded-md tools"
                   draggable="true"
                   onDragStart={() => {
                     setdragStatus(false);
@@ -83,7 +86,7 @@ export default function Course() {
                   third
                 </div>
                 <div
-                  className="w-[70px] h-[65px] bg-gray-600 rounded-md tools"
+                  className="mobile-sm:w-[45px] mobile-sm:h-[45px] tablet:w-[70px] tablet:h-[65px] bg-gray-600 rounded-md tools"
                   draggable="true"
                   onDragStart={() => {
                     setdragStatus(false);
@@ -93,7 +96,7 @@ export default function Course() {
                   fourth
                 </div>
                 <div
-                  className="w-[70px] h-[65px]  bg-gray-600 rounded-md tools"
+                  className="mobile-sm:w-[45px] mobile-sm:h-[45px] tablet:w-[70px] tablet:h-[65px]  bg-gray-600 rounded-md tools"
                   draggable="true"
                   onDragStart={() => {
                     setdragStatus(false);
@@ -109,18 +112,20 @@ export default function Course() {
         <div>
           <div className="flex flex-col justify-center items-center text-white py-[10vh]">
             <h2 className="text-fblue   fontbold">COURSE</h2>
-            <p className="text-center w-[80vw] parafont">
+            <p className="text-center w-[80vw] parafont ">
               You can use any value defined in your opacity scale, or use
               arbitrary values if you need to deviate from your design tokens
               arbitrary values if you need to deviate from your design tokens.
             </p>
           </div>
 
-          <div className={`flex flex-row flex-wrap w-screen justify-center  `}>
+          <div
+            className={`!flex flex-row flex-wrap  justify-center  !items-center `}
+          >
             {coursedata.map((res) => {
               return (
                 <>
-                  <div className="laptop:basis-1/4 py-10 px-10 relative">
+                  <div className="laptop:basis-1/4 py-10 px-5 relative flex justify-center">
                     <div
                       className={`bg-white  coursebr border-4 border-black    w-[350px]  h-[550px]  rounded-[8px] flex items-center flex-col overflow-hidden`}
                     >
@@ -154,7 +159,7 @@ export default function Course() {
                         </div>
 
                         <div className="py-3">
-                          <p className="pb-5">{res.pera}</p>
+                          <p className="pb-5 text-justify">{res.pera}</p>
                         </div>
                       </div>
                       <di className="flex  justify-center items-center gap-x-5">

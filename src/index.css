@@ -134,11 +134,7 @@ url('../public/courseimg/course.png') ; */
   display: none;
 }
 
-.fontbold {
 
-  font-size: 35px !important;
-  font-weight: 700 !important;
-}
 
 .img img {
   /* padding: 80px; */
@@ -157,7 +153,24 @@ url('../public/courseimg/course.png') ; */
   }
 }
 
-/* clone */
+/* nav font*/
+
+.fontnav {
+  /* font-family: spacereg; */
+  font-size: 16px;
+}
+
+.navlet{
+  font-size: 16px;
+}
+
+
+/*heading color and size*/
+.fontbold {
+
+  font-size: 35px !important;
+  font-weight: 700 !important;
+}
 
 /*background theme*/
 
