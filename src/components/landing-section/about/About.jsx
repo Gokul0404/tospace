@@ -28,15 +28,15 @@ function About() {
 
   return (
     <div className="aboutbg  py-20  relative ">
-      <div className="flex items-center w-screen flex-row-reverse">
+      <div className="flex items-center w-screen ">
         <div className=" laptop:w-[20vw] "></div>
-        <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[25%]   description mobile-sm:order-last laptop:order-first  ">
+        <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[25%] desktop-lg:ml-[35%]  description mobile-sm:order-last laptop:!order-first  ">
           <motion.h1 className=" mobile-sm:text-heading mobile-sm:font-bold  mobile-sm:text-center laptop:text- laptop:text-soon  pb-[10vh] text-fblue laptop:text-justify ">
             THE HISTORY OF TOSPACE LEARN
           </motion.h1>
 
           <motion.p
-            className="mobile-sm:w-[90vw] mobile-sm:px-5 mobile-sm:text-justify laptop:px-0 mobilemax:w-[100vw]   laptop-lg:w-[90vh] mobile-sm:text-paragraph laptop:text-paragraph laptop:text-justify laptop:w-[50vw] parafont"
+            className="mobile-sm:w-[90vw] mobile-sm:px-5 mobile-sm:text-justify laptop:px-0 mobilemax:w-[100vw]   laptop-lg:w-[50vw] mobile-sm:text-paragraph laptop:text-paragraph laptop:text-justify laptop:w-[50vw] parafont"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 5 }}
@@ -44,7 +44,7 @@ function About() {
             {imageSlide[currentState].message}
           </motion.p>
 
-          <div className="explore_btn font-Azon mt-[5vh]">
+          <div className=" font-Azon mt-[5vh]">
             {/* <motion.button
               className="view text-white laptop-lg:w-[14%] h-[4vh] mobile-sm:w-[15vh] 4k:text-4k desktop:text-desk mobile-sm:text-mob  rounded border-none "
               initial={{ opacity: 0 }}
@@ -53,33 +53,32 @@ function About() {
             >
               View More
             </motion.button> */}
-            <button className="ab_btn tabletmax:ml-5">View More</button>
+            <button className="ab_btn laptop:!cursor-pointer ">
+              View More
+            </button>
           </div>
         </div>
-        <div className="absolute left-0 mobile-lg:top-8 mobilemax:top-20">
-          <motion.img
-            src={"./moon.png"}
-            alt=""
-            className=" mobile-lg:w-[45%]  mobile-lg:h-[30%] desktop-lg:w-[55%] desktop-lg-4k:w-[65%] mobile-sm:hidden laptop:block  "
 
-            //mobile-lg:w-[45%]  mobile-lg:h-[30%]  mobilemax:w-[30%]
-            // initial={{ opacity: 0 }}
-            // animate={{
-            //   opacity: 0.5,
+        <motion.img
+          src={"./moon.png"}
+          alt="img"
+          className=" absolute h-[100%] left-0 mobile-lg:top-8 mobilemax:top-20 mobile-lg:w-[45%]  mobile-lg:h-[30%] laptop:w-[250px] laptop:h-[450px] desktop-lg:w-[25%] desktop-lg-4k:w-[500px]  desktop-lg-4k:h-[600px] mobile-sm:hidden laptop:block  "
 
-            //   transition: {
-            //     type: "spring",
-            //     duration: 6,
-            //     bounce: 0.1,
-            //     repeat: Infinity,
-            //     repeatDelay: 2,
-            //   },
-            // }}
-            // whileHover={{ opacity: 1 }}
-          />
+          //mobile-lg:w-[45%]  mobile-lg:h-[30%]  mobilemax:w-[30%]
+          // initial={{ opacity: 0 }}
+          // animate={{
+          //   opacity: 0.5,
 
-          {/*  */}
-        </div>
+          //   transition: {
+          //     type: "spring",
+          //     duration: 6,
+          //     bounce: 0.1,
+          //     repeat: Infinity,
+          //     repeatDelay: 2,
+          //   },
+          // }}
+          // whileHover={{ opacity: 1 }}
+        />
 
         {/* <div className="m-auto w-[21vh] h-[9vh] p-1 sponsor rounded-lg"><img src={Lmes} alt=""  className="pt-2"/></div> */}
       </div>

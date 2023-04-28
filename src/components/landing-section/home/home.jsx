@@ -40,13 +40,13 @@ function Home() {
               <div className="flex">
                 <div className="w-[100px] bg-white h-[0.1vh] mt-3"></div>
                 <div className="pl-1 w-[100px] justify-around flex">
-                  <span className="hover:text-pink-700">
+                  <span className="hover:text-pink-700 cursor-pointer">
                     <InstagramIcon />
                   </span>
-                  <span className="hover:text-blue-500">
+                  <span className="hover:text-blue-500 cursor-pointer">
                     <FacebookIcon />
                   </span>
-                  <span className="hover:text-blue-900">
+                  <span className="hover:text-blue-900 cursor-pointer">
                     <LinkedInIcon />
                   </span>
                 </div>

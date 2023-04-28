@@ -22,16 +22,16 @@ export default function Footer() {
             edit your website design, manage social media
           </div>
           <div className="justify-between flex w-[120px]">
-            <span className="hover:text-in">
+            <span className="hover:text-in cursor-pointer">
               <InstagramIcon />
             </span>
-            <span className="hover:text-fa">
+            <span className="hover:text-fa cursor-pointer">
               <FacebookIcon />
             </span>
-            <span className="hover:text-lin">
+            <span className="hover:text-lin cursor-pointer">
               <LinkedInIcon />
             </span>
-            <span className="hover:text-twi">
+            <span className="hover:text-twi cursor-pointer">
               <Twitter />
             </span>
           </div>

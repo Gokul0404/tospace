@@ -18,9 +18,9 @@ export default function Course() {
   return (
     <div id="course ">
       <div className="bg-white w-screen  pt-[11.5vh] ">
-        <div className="w-screen bg-white py-6 course_bg_img" draggable="false">
-          <div className="flex justify-start pl-[10%] gap-x-[3%] ">
-            <div className=" w-[70vw] h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
+        <div className="w-screen bg-white py-6 course_bg_img mobile-sm:flex mobile-sm:justify-center laptop:flex-none"  draggable="false">
+          <div className="laptop:flex justify-start laptop:pl-[10%] gap-x-[3%] ">
+            <div className=" laptop:w-[70vw] h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
               {/* screen */}
               {console.log(dragData)}
               <div
@@ -48,8 +48,8 @@ export default function Course() {
             </div>
 
             {/* tool */}
-            <div className="w-[10vw] h-[80vh]  flex justify-center items-center">
-              <div className="w-[100%]  flex justify-center flex-col items-center gap-5 text-center text-white">
+            <div className=" mobile-sm:w-[100%]  relative laptop:w-[10vw] mobile-sm:h-[10vh] laptop:h-[80vh]  flex justify-center items-center">
+              <div className="w-[100%] mobile-sm:absolute mobile-sm:top-5  flex justify-center mobile-sm:flex-row laptop:flex-col items-center gap-5 text-center text-white">
                 <div
                   className="w-[70px] h-[65px]  bg-gray-600 tools rounded-md"
                   draggable="true"
