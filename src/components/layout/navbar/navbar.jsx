@@ -47,11 +47,11 @@ function Navbar() {
         location.pathname.split("/")[1] === "login" ? "hidden" : "block"
       } nav_bg2 absolute w-screen  flex justify-center z-40 ease-in-out duration-500`}
     >
-      <motion.div className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%] fontnav">
+      <motion.div className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%]   fontnav">
         <motion.div>
           <Link to="/home">
             <motion.img
-              className="w-[110px] select-none "
+              className="w-[130px] select-none desktop-lg-4k:w-[160px]"
               initial={{ y: -60 }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
@@ -111,10 +111,15 @@ function Navbar() {
               Courses
             </Link>
           </p>
-          <p onClick={() => setOpen(true)} className="hover:bg-[#277de0] hover:text-white py-2">
+          <p
+            onClick={() => setOpen(true)}
+            className="hover:bg-[#277de0] hover:text-white py-2"
+          >
             Contact
           </p>
-          <p className="hover:bg-[#277de0] py-2 hover:text-white">Let's Connect</p>
+          <p className="hover:bg-[#277de0] py-2 hover:text-white">
+            Let's Connect
+          </p>
         </div>
       </Drawer>
     </div>

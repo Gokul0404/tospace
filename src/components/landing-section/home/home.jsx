@@ -24,12 +24,12 @@ function Home() {
         <motion.div className="items-start    h-screen   space-y-10 flex ">
           {/* <motion.img className="w-[45%] 4k:w-[40%] select-none" src={Title} /> */}
           <motion.div className="mobile-sm:w-[55%] laptop:w-[35%] h-[60vh] pl-[5%]">
-            <motion.p className="font-bold text-head mobile-sm:w-[100%] laptop:w-[80%] mobile-sm:pt-[40%] laptop:pt-[30%]">
+            <motion.p className="font-bold text-head desktop-lg-4k:text-[65px] mobile-sm:w-[100%] laptop:w-[80%] desktop-lg-4k:w-[90%] mobile-sm:pt-[40%] laptop:pt-[30%]">
               Inspire Innovate Ignite
             </motion.p>
-            <div className=" mobile-sm:w-[100%] laptop:w-[90%] pt-10 flex items-start  gap-x-2 ">
-              <div className="w-[50px] bg-yellow-500 h-[0.3vh] mt-3"></div>
-              <div className="">
+            <div className=" mobile-sm:w-[100%] laptop:w-[90%] desktop-lg-4k:w-[100%] pt-10 flex items-start  gap-x-2 ">
+              <div className="w-[50px] bg-yellow-500 h-[0.3vh] mt-3 desktop-lg-4k:mt-5"></div>
+              <div className="desktop-lg-4k:text-[25px]">
                 {" "}
                 Once upon a time building a satellite is only a dream, a group
                 of passionate
@@ -52,14 +52,11 @@ function Home() {
                 </div>
               </div>
             </div>
-                  </motion.div>
-                  
+          </motion.div>
 
-                  {/* space man image */}
-                  
+          {/* space man image */}
 
-                  
-          <motion.div className="pl-[20vw] pt-[10vh]">   
+          <motion.div className="pl-[20vw] pt-[10vh]">
             {/* <div className="img">
               <img src={spaceman} className="  mobile-lg:w-[80%]  laptop:w-[80%]   laptop-lg:w-[100%] h-[100%] "></img>
             </div> */}
