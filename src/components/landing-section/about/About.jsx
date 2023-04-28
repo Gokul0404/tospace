@@ -30,7 +30,7 @@ function About() {
     <div className="aboutbg  py-20  relative ">
       <div className="flex items-center w-screen ">
         <div className=" laptop:w-[20vw] "></div>
-        <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[25%] desktop-lg:ml-[35%]  description mobile-sm:order-last laptop:!order-first  ">
+        <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[35%] desktop-lg:ml-[35%]  description mobile-sm:order-last laptop:!order-first  ">
           <motion.h1 className=" mobile-sm:text-heading mobile-sm:font-bold  mobile-sm:text-center laptop:text- laptop:text-soon  pb-[10vh] text-fblue laptop:text-justify ">
             THE HISTORY OF TOSPACE LEARN
           </motion.h1>
@@ -53,7 +53,7 @@ function About() {
             >
               View More
             </motion.button> */}
-            <button className="ab_btn laptop:!cursor-pointer ">
+            <button className="ab_btn laptop:!cursor-pointer !font-[700]">
               View More
             </button>
           </div>
@@ -62,7 +62,7 @@ function About() {
         <motion.img
           src={"./moon.png"}
           alt="img"
-          className=" absolute h-[100%] left-0 mobile-lg:top-8 mobilemax:top-20 mobile-lg:w-[45%]  mobile-lg:h-[30%] laptop:w-[250px] laptop:h-[450px] desktop-lg:w-[25%] desktop-lg-4k:w-[500px]  desktop-lg-4k:h-[600px] mobile-sm:hidden laptop:block  "
+          className=" absolute h-[100%] left-0 mobile-lg:top-8 mobilemax:top-20 mobile-lg:w-[45%]  mobile-lg:h-[30%] laptop:w-[250px] laptop:h-[450px] desktop-lg:w-[370px] desktop-lg:h-[600px] desktop-lg-4k:w-[370px]  desktop-lg-4k:h-[600px] mobile-sm:hidden laptop:block  "
 
           //mobile-lg:w-[45%]  mobile-lg:h-[30%]  mobilemax:w-[30%]
           // initial={{ opacity: 0 }}
