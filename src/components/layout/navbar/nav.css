@@ -13,6 +13,12 @@
   /* margin-top: 22px; */
 }
 
+
+.ant-select-selector{
+  height: 38px !important;
+}
+
+
 .ant-modal-content {
   background: rgb(130, 129, 130);
   background: linear-gradient(
@@ -34,4 +40,69 @@
 
 .ant-select-selection-placeholder {
   color: black !important;
+}
+
+@media screen and (min-width:1024px) {
+  
+
+  .mobileview{
+    display: none;
+  }
+
+}
+
+@media screen and  (max-width:440px){
+
+  .ant-modal-content {
+
+width: 300px !important;
+  margin-left: 5% !important;
+  margin-right: 50px !important;
+  }
+.buttonsub{
+  margin-left: -10px !important;
+}
+
+}
+
+@media screen and  (max-width:1023px){
+
+  :where(.css-dev-only-do-not-override-mxhywb).ant-select-single:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  width: 250px;
+  height: 40px;
+;
+
+}
+
+.lapview{
+  display:none;
+}
+.ant-select-arrow {
+  margin-top: -5px !important;
+  color: black !important;
+}
+
+
+
+.ant-select-single{
+margin-bottom: 25px;
+
+}
+
+.ant-select-selector{
+/* padding: 7% !important; */
+height: 40px !important;
+}
+
+.ant-modal-content {
+padding-left: 20px;
+padding-right: 20px;
+width: 350px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 }

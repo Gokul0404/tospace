@@ -135,7 +135,9 @@ url('../public/courseimg/course.png') ; */
 }
 
 .fontbold {
-  @apply text-soon font-bold;
+
+  font-size: 35px !important;
+  font-weight: 700 !important;
 }
 
 .img img {

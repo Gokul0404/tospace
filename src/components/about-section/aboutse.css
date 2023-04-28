@@ -2,7 +2,41 @@
 /* .cont{
     display: none;
 }*/
+/* .miniconimg{
+  display: none !important;
+} */
+
+.imagese1:hover{
+  transform: scale(1.1) !important;
+  /* display: block !important; */
+}
 
 .imagese:hover{
   transform: scale(1.1);
+  /* display: block !important; */
+}
+
+/* 
+.conimgpa:hover .miniconimg{
+display: block !important;
+} */
+
+.miniconimg1:hover .temh{
+  padding-top: 22%;
+ 
+}
+.group1:hover .miniconimg1{
+  background-color: rgba(2, 2, 2, 0.664) !important;
+  height: 100% !important;
+/* margin-top: -20% !important; */
+
+}
+
+
+
+.group:hover .miniconimg{
+  background-color: rgba(2, 2, 2, 0.664);
+  height: 100%;
+/* margin-top: -20%; */
+transition: 0.5s ease-in-out;
 }

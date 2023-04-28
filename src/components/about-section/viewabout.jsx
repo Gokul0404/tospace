@@ -13,17 +13,16 @@ import { get } from "lodash";
 import Experts from "../about-section/experts";
 
 function Viewabout() {
-
-
   const [teamStatus, setTeamStatus] = useState(0);
+
   const [founters, setFounders] = useState(0);
 
   return (
     <>
-      <div className="bg-white h-[100%] text-black p-[10vh] pt-[8%]">
+      <div className="bg-white h-[100%] text-black p-[10vh] mobile-sm:pt-[20%] tablet:pt-[12%] laptop:pt-[8%]">
         <div>
           <div className="header laptop:text-para mobile-sm:text-[22px] ">
-            <h1>WHY CHOOSE US</h1>
+            <h1 className="font-semibold">WHY CHOOSE US</h1>
           </div>
           <div className="paragraph pt-5 laptop:w-[85vh] text-justify">
             <h1>
@@ -32,7 +31,7 @@ function Viewabout() {
               and launching real satellites into space.
             </h1>
           </div>
-          <div className="flex gap-x-[10vh] pt-[10vh] mobile-sm:flex-col laptop:flex-row">
+          <div className="flex gap-x-[10vh] pt-[10vh] mobile-sm:flex-col laptop:flex-row justify-center items-center">
             <div className=" header ">
               <div className="head text-para mobile-sm:text-[22px]">
                 <h1>How our courses are different from others</h1>
@@ -96,7 +95,7 @@ function Viewabout() {
 
             <div>
               <div>
-                <img src={Aboutim} alt="" className="w-[50vh] rounded-3xl" />
+                <img src={Aboutim} alt="img" className="w-[50vh] rounded-3xl" />
               </div>
             </div>
           </div>
@@ -106,30 +105,41 @@ function Viewabout() {
         </div>
         {/* our team */}
 
-        <div className="grid grid-cols-2  items-center ">
-          <div className="gap-x-5  justify-center flex-wrap grid grid-cols-4 ">
+        <div className="grid  laptop:grid-cols-2  items-center ">
+          <div className="laptop:gap-x-5 desktop:gap-x-10  mobile-sm:grid-cols-1 tablet:grid-cols-2 justify-center flex-wrap grid laptop:grid-cols-4  desktop-lg-4k: ">
             {Founders.map((founder) => {
               return (
-                <div className=" pt-5 flex flex-col ">
-                  <div className="bg-black w-[150px] h-[150px] rounded-full overflow-hidden">
+                <div className=" pt-5 flex flex-col w-[100%] mobile-sm:justify-center mobile-sm:items-center ">
+                  <div
+                    onMouseOver={() => {
+                      setTeamStatus(founder.id - 1);
+                    }}
+                    className="bg-black  group relative  mobile-sm:w-[180px] mobile-sm:h-[180px] tablet:w-[200px] tablet:h-[200px] laptop:w-[120px] laptop:h-[120px] desktop:w-[150px] desktop:h-[150px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px] rounded-full overflow-hidden roundimgbg"
+                  >
                     <img
                       src={founder.image}
-                      className="imagese"
-                      onMouseOver={() => {
-                        setTeamStatus(founder.id - 1);
-                      }}
+                      className="imagese1 mobile-sm:w-[180px] mobile-sm:h-[180px] h-[150px] w-[150px] tablet:w-[200px] tablet:h-[200px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px]"
                     ></img>
+                    <div className="!hidden miniconimg group-hover:!block    laptop:invisible mobile-sm:block absolute z-30 top-0 mobile-sm:text-[10px] tablet:text-[12px] ">
+                      <h2 className="mobile-sm:text-[20px] font-bold laptop:w-[100vw] text-center mobile-sm:text-white pt-7">
+                        {Founders[teamStatus].name}
+                      </h2>
+                      <p className="mobile-sm:w-[100%]  px-1 laptop:w-[70%] left-10 text-center  text-white">
+                        {Founders[teamStatus].description}
+                      </p>
+                    </div>
                   </div>
+
                   <img
                     src="./linkedin.png"
-                    className="w-[18px] pt-2 ml-[65px] cursor-pointer"
+                    className="w-[18px] pt-2  cursor-pointer"
                   ></img>
                 </div>
               );
             })}
           </div>
-          <div>
-            <div className="flex items-center text-center flex-col cont  ">
+          <div className=" grid grid-cols-1">
+            <div className=" flex-col cont mobile-sm:hidden laptop:flex laptop:items-center laptop:text-center  laptop:visible ">
               <h2 className="text-[30px] font-bold">
                 {Founders[teamStatus].name}
               </h2>
@@ -142,30 +152,40 @@ function Viewabout() {
             <h1>OUR EXPERTS</h1>
           </div>
           {/* our Experts */}
-          <div className="grid grid-cols-2  items-center ">
-            <div className="  justify-center flex-wrap grid grid-cols-3 w-[78%]">
+          <div className="grid laptop:grid-cols-2  items-center ">
+            <div className=" laptop:gap-x-5 desktop:gap-x-5 mobile-sm:justify-center flex-wrap grid tablet:grid-cols-2 laptop:grid-cols-3 laptop:w-[78%]">
               {Experts.map((founder) => {
                 return (
-                  <div className=" pt-5 flex flex-col ">
-                    <div className="bg-black w-[150px] h-[150px] rounded-full overflow-hidden">
+                  <div className=" pt-5 group flex flex-col w-[100%] mobile-sm:justify-center mobile-sm:items-center">
+                    <div
+                      onMouseOver={() => {
+                        setFounders(founder.id - 1);
+                      }}
+                      className="conimgpa  relative bg-black mobile-sm:w-[180px] mobile-sm:h-[180px] tablet:w-[200px] tablet:h-[200px] laptop:w-[120px] laptop:h-[120px] desktop:w-[150px] desktop:h-[150px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px] rounded-full overflow-hidden roundimgbg"
+                    >
                       <img
                         src={founder.image}
-                        className=""
-                        onMouseOver={() => {
-                          setFounders(founder.id - 1);
-                        }}
+                        className="imagese  desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px]"
                       ></img>
+                      <div className="!hidden miniconimg group-hover:!block   laptop:invisible mobile-sm:block absolute z-30 top-0 mobile-sm:text-[10px] tablet:text-[12px] ">
+                        <h2 className="mobile-sm:text-[20px] font-bold laptop:w-[100vw]  text-center mobile-sm:text-white pt-7">
+                          {Experts[founters].name}
+                        </h2>
+                        <p className="mobile-sm:w-[100%] h-[100%]  laptop:w-[70%] inset-0 text-center  text-white">
+                          {Experts[founters].description}
+                        </p>
+                      </div>
                     </div>
                     <img
                       src="./linkedin.png"
-                      className="w-[18px] pt-2 ml-[65px] cursor-pointer"
+                      className="w-[18px] pt-2  cursor-pointer"
                     ></img>
                   </div>
                 );
               })}
             </div>
             <div>
-              <div className="flex items-center text-center flex-col ">
+              <div className="laptop:flex laptop:items-center laptop:text-center laptop:flex-col mobile-sm:hidden laptop:visible ">
                 <h2 className="text-[30px] font-bold">
                   {Experts[founters].name}
                 </h2>

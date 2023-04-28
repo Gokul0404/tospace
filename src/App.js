@@ -13,6 +13,7 @@ import {
 import Course from "./components/course/section";
 import Login from "./components/Login/Login";
 import Product from "./components/product/product";
+import Contact from "./components/Contact/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="course" element={<Course />} />
       <Route path="login" element={<Login />} />
       <Route path="product" element={<Product/>} />
+      <Route path="contact" element={<Contact/>} />
       {/* <Route path="courses" element={<Course />} />
       <Route path="contact" element={<Contact />} />  */}
     </Route>

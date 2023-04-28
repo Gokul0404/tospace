@@ -27,7 +27,8 @@ module.exports = {
       "mobile-lg": "420px",
 
       tablet: "640px",
-
+      "tabletmax": { 'max': "700px" },
+      "mobilemax": { 'max': "500px" },
       laptop: "1024px",
 
       "laptop-lg": "1440px",
@@ -35,7 +36,7 @@ module.exports = {
       desktop: "1280px",
       "desktop-lg": "1500px",
       "desktop-lg-4k": "1800px",
-
+"4k-first":"2100px",
       "4k": "2560px",
     },
     extend: {

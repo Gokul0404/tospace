@@ -14,7 +14,7 @@ export default function Review() {
           </div>
 
         
-          <div className="parafont">
+          <div className="parafont ">
             <p>
               Lorem ipsum is simply ghtryhtn rtb hdummy text of the printing and
               typesetting industry. Lorem ipsum has been the industry's standard
@@ -25,10 +25,10 @@ export default function Review() {
         </div>
       </div>
 
-      <div className="mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center laptop:flex  laptop:flex-row justify-center px-5 py-10">
+      <div className="mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center  laptop:flex  laptop:flex-row justify-center px-5 py-10">
           {reviewdata.map((data) => {
             return (
-              <div className="w-[80%]   mobile-md:flex-col laptop:flex-row flex items-center justify-center ">
+              <div className="w-[100%]   mobile-md:flex-col laptop:flex-row flex items-center justify-center ">
                 <div className="w-[90%]">
                   <div className="py-5 flex  z-50 justify-center pl-2 ">
                     <motion.div

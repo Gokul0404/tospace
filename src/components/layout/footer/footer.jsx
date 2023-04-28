@@ -7,9 +7,12 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 import { Twitter } from '@mui/icons-material';
+import { Divider } from "antd";
 export default function Footer() {
   return (
-    <div className="w-screen footerbg  text-black justify-center flex items-center ">
+     
+    <div className="w-screen footerbg border border-t-2  text-black justify-center flex items-center ">
+    
       <div className="mobile-sm:grid  mobile-sm:grid-cols-1 mobile-sm: laptop:grid-cols-4 gap-4 w-[85vw] p-5">
         <div className="mobile-sm:py-2">
           <span className="font-bold text-[20px]">EVOLUTION</span>

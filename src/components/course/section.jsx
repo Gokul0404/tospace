@@ -4,18 +4,20 @@ import "../landing-section/about/about.css";
 
 import { coursedata } from "../course/SectionData";
 import { useNavigate, Link, NavLink } from "react-router-dom";
-
+import Contact from "../Contact/Contact";
 export default function Course() {
   const navigate = useNavigate();
+ 
   const [dragStatus, setdragStatus] = useState(false);
   const [dragData, setDragData] = useState("");
+   const [open, setOpen] = useState(false); 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   console.log(dragData.split("."));
   return (
     <div id="course ">
-      <div className="bg-white w-screen  pt-[13vh] ">
+      <div className="bg-white w-screen  pt-[11.5vh] ">
         <div className="w-screen bg-white py-6 course_bg_img" draggable="false">
           <div className="flex justify-start pl-[10%] gap-x-[3%] ">
             <div className=" w-[70vw] h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
@@ -120,10 +122,10 @@ export default function Course() {
                 <>
                   <div className="laptop:basis-1/4 py-10 px-10 relative">
                     <div
-                      className={`bg-white  coursebr border-4 border-black  mobile-sm:w-[80vw]  mobile-md:w-[70vw]  tablet:w-[40vw] laptop:h-[550px] laptop:w-[23vw]  rounded-[8px] flex items-center flex-col overflow-hidden`}
+                      className={`bg-white  coursebr border-4 border-black  mobile-sm:w-[85vw]  mobile-md:w-[75vw]  tablet:w-[45vw] laptop:h-[550px] laptop:w-[27vw] desktop-lg-4k:w-[25vw] 4k-first:w-[18vw] rounded-[8px] flex items-center flex-col overflow-hidden`}
                     >
                       {/* <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black"> */}
-                      <div className="bg-gray-400 w-[100%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[100%] laptop:w-[22.9vw] laptop:h-[50vh]  overflow-hidden border-[2px] !border-x-0 border-y-0 ">
+                      <div className="bg-gray-400 w-[100%] mobile-sm:h-[30vh]   laptop:h-[50vh]  overflow-hidden border-[2px] !border-x-0 border-y-0 ">
                         <img
                           src={`${res.img}`}
                           alt="no"
@@ -162,16 +164,20 @@ export default function Course() {
                           </button>
                         </div> */}
                         <div className="py-5  absolute bottom-0 ">
-                          <Link
+                          {/* <Link
                             to="/product"
                             state={{
-                              id: res.id,
+                              id: res.id, //data share in another component
                             }}
+                          > */}
+                          <button
+                            className="course_btn2 px-5 py-2 "
+                            onClick={() => setOpen(true)}
                           >
-                            <button className="course_btn2 px-5 py-2 ">
-                              Register
-                            </button>{" "}
-                          </Link>
+                            Register
+                          </button>{" "}
+                          {/* </Link> */}
+                          {open && <Contact open={open} setOpen={setOpen} />}
                         </div>
                       </di>
                     </div>

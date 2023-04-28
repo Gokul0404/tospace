@@ -28,15 +28,15 @@ function About() {
 
   return (
     <div className="aboutbg  py-20  relative ">
-      <div className="flex items-center justify-evenly w-screen flex-row-reverse">
-        <div className="w-[20vw]"></div>
-        <div className="description mobile-sm:order-last laptop:order-first  ">
-          <motion.h1 className="laptop:text-heading pb-[10vh] fontbold text-fblue laptop:text-justify mobile-sm:text-center">
+      <div className="flex items-center w-screen flex-row-reverse">
+        <div className=" laptop:w-[20vw] "></div>
+        <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[25%]   description mobile-sm:order-last laptop:order-first  ">
+          <motion.h1 className=" mobile-sm:text-heading mobile-sm:font-bold  mobile-sm:text-center laptop:text- laptop:text-soon  pb-[10vh] text-fblue laptop:text-justify ">
             THE HISTORY OF TOSPACE LEARN
           </motion.h1>
 
           <motion.p
-            className="mobile-sm:w-[90vw] laptop-lg:w-[90vh] laptop:text-paragraph text-justify laptop:w-[50vw] parafont"
+            className="mobile-sm:w-[90vw] mobile-sm:px-5 mobile-sm:text-justify laptop:px-0 mobilemax:w-[100vw]   laptop-lg:w-[90vh] mobile-sm:text-paragraph laptop:text-paragraph laptop:text-justify laptop:w-[50vw] parafont"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 5 }}
@@ -44,7 +44,7 @@ function About() {
             {imageSlide[currentState].message}
           </motion.p>
 
-          <div className="explore_btn font-Azonix mt-[5vh]">
+          <div className="explore_btn font-Azon mt-[5vh]">
             {/* <motion.button
               className="view text-white laptop-lg:w-[14%] h-[4vh] mobile-sm:w-[15vh] 4k:text-4k desktop:text-desk mobile-sm:text-mob  rounded border-none "
               initial={{ opacity: 0 }}
@@ -53,14 +53,16 @@ function About() {
             >
               View More
             </motion.button> */}
-            <button className="ab_btn">View More</button>
+            <button className="ab_btn tabletmax:ml-5">View More</button>
           </div>
         </div>
-        <div className="absolute left-0 top-8">
+        <div className="absolute left-0 mobile-lg:top-8 mobilemax:top-20">
           <motion.img
             src={"./moon.png"}
             alt=""
-            className="  w-[45%]  h-[30%]  "
+            className=" mobile-lg:w-[45%]  mobile-lg:h-[30%] mobile-sm:hidden laptop:block  "
+
+            //mobile-lg:w-[45%]  mobile-lg:h-[30%]  mobilemax:w-[30%]
             // initial={{ opacity: 0 }}
             // animate={{
             //   opacity: 0.5,
@@ -106,9 +108,9 @@ function About() {
         ))}
       </Swiper> */}
       <div className="sponsor_content text-center mt-[15vh]">
-        <h3 className="fontbold laptop:text-[24px] text-fblue mobile-sm:text-desk pb-5">
+        <h3 className=" fontbold laptop:text-[24px] text-fblue  pb-5">
           {" "}
-          Trusted By Our Cliente 
+          Trusted By Our Cliente
         </h3>
       </div>
     </div>

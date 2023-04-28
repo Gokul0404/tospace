@@ -23,11 +23,11 @@ function Home() {
       <motion.div className="home ease-in-out duration-700" id="home">
         <motion.div className="items-start    h-screen   space-y-10 flex ">
           {/* <motion.img className="w-[45%] 4k:w-[40%] select-none" src={Title} /> */}
-          <motion.div className=" w-[35%] h-[60vh] pl-[5%]">
-            <motion.p className="font-bold text-head  w-[80%] pt-[30%]">
+          <motion.div className="mobile-sm:w-[55%] laptop:w-[35%] h-[60vh] pl-[5%]">
+            <motion.p className="font-bold text-head mobile-sm:w-[100%] laptop:w-[80%] mobile-sm:pt-[40%] laptop:pt-[30%]">
               Inspire Innovate Ignite
             </motion.p>
-            <div className="w-[90%] pt-10 flex items-start  gap-x-2 ">
+            <div className=" mobile-sm:w-[100%] laptop:w-[90%] pt-10 flex items-start  gap-x-2 ">
               <div className="w-[50px] bg-yellow-500 h-[0.3vh] mt-3"></div>
               <div className="">
                 {" "}

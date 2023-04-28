@@ -171,7 +171,7 @@ function Event() {
                 </div>
                 <SwiperSlide>
                   <div className="flex">
-                    <div class="w-[20vw] h-[35vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-fit desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -190,7 +190,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw]  h-[37vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[29vh]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
+                    <div class="w-[20vw]  h-fit desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[29vh]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
                         <a href="#">
                           <img
@@ -209,7 +209,7 @@ function Event() {
                         </a>
                       </div>
                     </div>
-                    <div class="w-[20vw] h-[35vh] desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
+                    <div class="w-[20vw] h-fit desktop-lg-4k:w-[15vw] desktop-lg-4k:h-[26vh]  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
                         <a href="#">
                           <img

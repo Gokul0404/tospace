@@ -22,7 +22,8 @@ export const vediodata = [
   },
   {
     id: 2,
-    img: "./courseimg/course2.jpg",
+    img: "./courseimg/course20.jpg",
+    img1: "./courseimg/course2.jpg",
     head: "DIY Science-Senior",
     v1: "25+",
     v2: "5+",
@@ -41,7 +42,7 @@ export const vediodata = [
   },
   {
     id: 3,
-    img: "./courseimg/course3.jpg",
+    img: "./courseimg/course30.jpg",
     head: "Glider Junior",
     v1: "25+",
     v2: "5+",
