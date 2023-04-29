@@ -62,7 +62,7 @@ function Video() {
                 autoPlay
                 muted
                 loop
-                className="laptop:w-[80%]  mobile-sm:w-[200vw] "
+                className="laptop:w-[80%]  mobile-sm:w-[200vw] tablet:w-[80vw]"
                 initial={{ opacity: 0 }}
                 // animate={{ }}
                 whileInView={{ opacity: 0.7 }}
@@ -74,17 +74,17 @@ function Video() {
           </div>
         </div>
 
-        <div className="card_part   mobile-sm:pt-[20vh]   mobile-sm:h-[100%] mobile-sm:pb-[2vh] videobg laptop:py-[10vh]">
+        <div className="card_part  mobile-sm:w-[100%]  mobile-sm:pt-[20vh]   mobile-sm:h-[100%] mobile-sm:pb-[2vh] videobg laptop:py-[10vh] laptop:px-5">
           <div className="grid laptop:grid-cols-3 gap-10  mt-10 mobile-sm:grid-rows-1 place-items-center">
             {vediodata.map((res) => {
               return (
                 <>
-                  <div className="laptop:basis-1/4 py-5 px-10 ">
+                  <div className="laptop:basis-1/4 py-5 tablet:px-2 ">
                     <div
-                      className={`bg-white  coursebr border-4 border-black  mobile-lg: mobile-lg:w-[350px] h-[550px]  rounded-[8px] flex items-center flex-col overflow-hidden`}
+                      className={`bg-white  coursebr border-4 border-black mobile-sm:w-[300px] tablet:w-[350px] laptop:w-[300px] laptopmax:!w-[350px] h-[550px]  rounded-[8px] flex items-center flex-col overflow-hidden`}
                     >
                       {/* <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black"> */}
-                      <div className="bg-gray-400 w-[100%] mobile-sm:h-[200px]   laptop:h-[50vh]  overflow-hidden border-[2px] !border-x-0 border-y-0 ">
+                      <div className="bg-gray-400 !w-[100%] mobile-sm:h-[200px]   laptop:h-[50vh]  overflow-hidden border-[2px] !border-x-0 border-y-0 ">
                         <img
                           src={`${res.img}`}
                           alt="no"

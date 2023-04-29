@@ -29,6 +29,7 @@ module.exports = {
       tablet: "640px",
       "tabletmax": { 'max': "700px" },
       "mobilemax": { 'max': "500px" },
+      "laptopmax":  "1180px",
       laptop: "1024px",
 laptopad:"1179px",
       "laptop-lg": "1440px",
