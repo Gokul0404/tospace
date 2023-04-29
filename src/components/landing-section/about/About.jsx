@@ -62,7 +62,8 @@ function About() {
         <motion.img
           src={"./moon.png"}
           alt="img"
-          className=" absolute h-[100%] left-0 mobile-lg:top-8 mobilemax:top-20 mobile-lg:w-[45%]  mobile-lg:h-[30%] laptop:w-[250px] laptop:h-[450px] desktop-lg:w-[370px] desktop-lg:h-[600px] desktop-lg-4k:w-[370px]  desktop-lg-4k:h-[600px] mobile-sm:hidden laptop:block  "
+          draggable="false"
+          className="  absolute h-[100%] left-0 mobile-lg:top-8 laptop:top-20 mobilemax:top-20 mobile-lg:w-[45%]  mobile-lg:h-[30%] laptop:w-[250px] laptop:h-[450px] desktop-lg:w-[370px] desktop-lg:h-[600px] desktop-lg-4k:w-[370px]  desktop-lg-4k:h-[600px] mobile-sm:hidden laptop:block  "
 
           //mobile-lg:w-[45%]  mobile-lg:h-[30%]  mobilemax:w-[30%]
           // initial={{ opacity: 0 }}

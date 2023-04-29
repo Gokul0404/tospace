@@ -13,8 +13,8 @@ function Video() {
     <>
       <div className="video_part_section videobg  parafont mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center mobile-sm:flex-col ">
         <div className="  video-side  ">
-          <div className="vide0_session mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:flex-none laptop:grid laptop:grid-cols-2 gap-4 w-[100%] py-10">
-            <div className="content-side mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:items-start laptop:flex laptop:justify-start items-start laptop:mx-[20vh] videobg z-10 laptop:p-5 w-[85%] text-justify">
+          <div className="vide0_session mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:flex-none laptop:grid laptop:grid-cols-2 gap-4 w-[100%] pb-10">
+            <div className="content-side mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:items-start laptop:flex laptop:justify-start items-start laptop:ml-[10vh] desktop:mx-[20vh] videobg z-10 laptop:pt-20 w-[85%] text-justify">
               <h1 className="fontbold text-fblue text-desk1 text-center">
                 HOW OUR COURSES
               </h1>
@@ -57,12 +57,12 @@ function Video() {
                 </Link>
               </div>
             </div>
-            <div className="pt-[10%] mobile-sm:px-10">
+            <div className="pt-[10%] mobile-sm:px-10 ">
               <motion.video
                 autoPlay
                 muted
                 loop
-                className="laptop:w-[80%]  mobile-sm:w-[200vw] tablet:w-[80vw]"
+                className="laptop:w-[80%]  mobile-sm:w-[200vw] tablet:w-[80vw] outline outline-offset-1 ring-[10px] ring-black outline-black"
                 initial={{ opacity: 0 }}
                 // animate={{ }}
                 whileInView={{ opacity: 0.7 }}
@@ -88,6 +88,7 @@ function Video() {
                         <img
                           src={`${res.img}`}
                           alt="no"
+                          draggable="false"
                           className="bg-cover h-full w-full "
                         />
                       </div>

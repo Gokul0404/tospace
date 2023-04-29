@@ -173,7 +173,7 @@ function Event() {
                   <div className="flex">
                     <div class="w-[280px] h-fit mobile-sm:hidden laptop:block  desktop-lg-4k:w-[15vw]    border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
-                        <a href="#">
+                        <a >
                           <img
                             class="p-1 h-[23vh] w-[100%]"
                             src={cards.url}
@@ -183,7 +183,7 @@ function Event() {
                       </div>
 
                       <div class="px-5">
-                        <a href="#">
+                        <a >
                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
                             {EventsCard[index === 0 ? 4 : index - 1].title}
                           </h5>
@@ -192,7 +192,7 @@ function Event() {
                     </div>
                     <div class="w-[280px]  h-fit desktop-lg-4k:w-[15vw]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
-                        <a href="#">
+                        <a >
                           <img
                             class="p-1 h-[25vh] w-[100%]"
                             src={cards.url}
@@ -202,7 +202,7 @@ function Event() {
                       </div>
 
                       <div class="px-5">
-                        <a href="#">
+                        <a>
                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
                             {cards.title}
                           </h5>
@@ -211,7 +211,7 @@ function Event() {
                     </div>
                     <div class="w-[280px] h-fit mobile-sm:hidden laptop:block desktop-lg-4k:w-[15vw]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
-                        <a href="#">
+                        <a>
                           <img
                             class="p-1 h-[23vh] w-[100%]"
                             src={cards.url}
@@ -221,7 +221,7 @@ function Event() {
                       </div>
 
                       <div class="px-5">
-                        <a href="#">
+                        <a>
                           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
                             {EventsCard[index === 4 ? 0 : index + 1].title}
                           </h5>

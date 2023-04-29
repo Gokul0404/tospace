@@ -100,7 +100,7 @@ function Viewabout() {
             </div>
           </div>
           <div className="header text-para mt-8">
-            <h1>OUR TEAM</h1>
+            <h1 className="font-semibold">OUR TEAM</h1>
           </div>
         </div>
         {/* our team */}
@@ -114,7 +114,7 @@ function Viewabout() {
                     onMouseOver={() => {
                       setTeamStatus(founder.id - 1);
                     }}
-                    className="bg-black  group relative  mobile-sm:w-[180px] mobile-sm:h-[180px] tablet:w-[200px] tablet:h-[200px] laptop:w-[120px] laptop:h-[120px] desktop:w-[150px] desktop:h-[150px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px] rounded-full overflow-hidden roundimgbg"
+                    className="bg-black  group gro relative  mobile-sm:w-[180px] mobile-sm:h-[180px] tablet:w-[200px] tablet:h-[200px] laptop:w-[120px] laptop:h-[120px] desktop:w-[150px] desktop:h-[150px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px] rounded-full overflow-hidden roundimgbg"
                   >
                     <img
                       src={founder.image}
@@ -147,12 +147,12 @@ function Viewabout() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="pt-10">
           <div className="header text-para mt-8">
-            <h1>OUR EXPERTS</h1>
+            <h2 className="font-semibold">OUR EXPERTS</h2>
           </div>
           {/* our Experts */}
-          <div className="grid laptop:grid-cols-2  items-center ">
+          <div className="grid laptop:grid-cols-2  items-center  ">
             <div className=" laptop:gap-x-5 desktop:gap-x-5 mobile-sm:justify-center flex-wrap grid tablet:grid-cols-2 laptop:grid-cols-3 laptop:w-[78%]">
               {Experts.map((founder) => {
                 return (
@@ -161,7 +161,7 @@ function Viewabout() {
                       onMouseOver={() => {
                         setFounders(founder.id - 1);
                       }}
-                      className="conimgpa  relative bg-black mobile-sm:w-[180px] mobile-sm:h-[180px] tablet:w-[200px] tablet:h-[200px] laptop:w-[120px] laptop:h-[120px] desktop:w-[150px] desktop:h-[150px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px] rounded-full overflow-hidden roundimgbg"
+                      className="conimgpa gro relative bg-black mobile-sm:w-[180px] mobile-sm:h-[180px] tablet:w-[200px] tablet:h-[200px] laptop:w-[120px] laptop:h-[120px] desktop:w-[150px] desktop:h-[150px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px] rounded-full overflow-hidden roundimgbg"
                     >
                       <img
                         src={founder.image}

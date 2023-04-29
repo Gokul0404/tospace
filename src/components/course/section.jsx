@@ -127,13 +127,14 @@ export default function Course() {
                 <>
                   <div className="laptop:basis-1/4 py-10 px-5 relative flex justify-center">
                     <div
-                      className={`bg-white  coursebr border-4 border-black    w-[350px]  h-[550px]  rounded-[8px] flex items-center flex-col overflow-hidden`}
+                      className={`bg-white  coursebr border-4 border-black  mobile-sm:w-[300px] tablet:w-[350px]  h-[550px]  rounded-[8px] flex items-center flex-col overflow-hidden`}
                     >
                       {/* <div className="bg-gray-400 w-[90%] mobile-sm:h-[30vh] mobile-md:w-[65vw] tablet:w-[35vw] laptop:w-[22vw] laptop:h-[22vh] mt-2 rounded-[8px] overflow-hidden border-[2px] !border-black"> */}
                       <div className="bg-gray-400 w-[100%] mobile-sm:h-[30vh]   laptop:h-[50vh]  overflow-hidden border-[2px] !border-x-0 border-y-0 ">
                         <img
                           src={`${res.img}`}
                           alt="no"
+                          draggable="false"
                           className="bg-cover h-full w-full "
                         />
                       </div>

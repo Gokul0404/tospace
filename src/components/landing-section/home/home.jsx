@@ -23,7 +23,7 @@ function Home() {
       <motion.div className="home ease-in-out duration-700" id="home">
         <motion.div className="items-start    h-screen   space-y-10 flex ">
           {/* <motion.img className="w-[45%] 4k:w-[40%] select-none" src={Title} /> */}
-          <motion.div className="mobile-sm:w-[55%] laptop:w-[35%] h-[60vh] pl-[5%]">
+          <motion.div className="mobile-sm:w-[57%] laptop:w-[45%] laptopad:[38%] desktop:w-[38%] laptop-lg:w-[40%] h-[60vh] pl-[5%]">
             <motion.p className="font-bold mobile-sm:text-[30px] tablet:text-head desktop-lg-4k:text-[65px] mobile-sm:w-[100%] laptop:w-[80%] desktop-lg-4k:w-[90%] mobile-sm:pt-[40%] laptop:pt-[30%]">
               Inspire Innovate Ignite
             </motion.p>
@@ -40,13 +40,13 @@ function Home() {
               <div className="flex">
                 <div className="w-[100px] bg-white h-[0.1vh] mt-3"></div>
                 <div className="pl-1 w-[100px] justify-around flex">
-                  <span className="hover:text-pink-700 cursor-pointer">
+                  <span className="hover:text-in cursor-pointer">
                     <InstagramIcon />
                   </span>
-                  <span className="hover:text-blue-500 cursor-pointer">
+                  <span className="hover:text-fa cursor-pointer">
                     <FacebookIcon />
                   </span>
-                  <span className="hover:text-blue-900 cursor-pointer">
+                  <span className="hover:text-lin cursor-pointer">
                     <LinkedInIcon />
                   </span>
                 </div>

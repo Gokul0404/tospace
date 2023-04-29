@@ -113,7 +113,7 @@ export default function Footer() {
           </div> */}
             <div className="py-2">
               <button
-                className="bg-blue-500 p-2 font-bold text-white hover:bg-blue-700"
+                className="bg-blue-500 p-2 font-bold text-white hover:bg-[#277de0]"
                 onClick={() => setOpen(true)}
               >
                 Subscribe

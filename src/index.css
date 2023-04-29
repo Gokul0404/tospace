@@ -172,6 +172,17 @@ url('../public/courseimg/course.png') ; */
   font-weight: 700 !important;
 }
 
+@media screen and (max-width:640px) {
+  
+
+.fontbold{
+  font-size: 26px !important;
+   font-weight: 700 !important;
+}
+
+
+}
+
 /*background theme*/
 
 .aboutbg {
