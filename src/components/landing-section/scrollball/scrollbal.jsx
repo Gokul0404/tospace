@@ -25,7 +25,7 @@ export default function Round() {
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <a href="#home" className="ease-in-out duration-300">
+      <a href="#home" className="ease-in-out duration-300">  
         <div class="container_sun">
           <span class="sun sunshine"></span>
           <span class="sun">

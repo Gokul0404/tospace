@@ -19,7 +19,7 @@ function Viewabout() {
 
   return (
     <>
-      <div className="bg-white h-[100%] text-black p-[10vh] mobile-sm:pt-[20%] tablet:pt-[12%] laptop:pt-[8%]">
+      <div className="bg-white h-[100%] text-black p-[10vh] mobile-sm:pt-[35%] tablet:pt-[18%] laptop:pt-[8%]">
         <div>
           <div className="header laptop:text-para mobile-sm:text-[22px] ">
             <h1 className="font-semibold">WHY CHOOSE US</h1>

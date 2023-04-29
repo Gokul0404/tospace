@@ -41,7 +41,7 @@ function Navbar() {
     <div
       className={`${
         colorChange
-          ? "bg-white text-black shadow-lg "
+          ? `bg-white text-black shadow-lg  `
           : "bg-transparent text-white"
       } ${
         location.pathname.split("/")[1] === "login" ? "hidden" : "block"
@@ -64,16 +64,20 @@ function Navbar() {
             {/* <motion.a className="hover:cursor-pointer">Home</motion.a> */}
           </Link>
           <Link to="about">
-            <motion.a className="hover:cursor-pointer">About</motion.a>
+            <motion.a className="hover:cursor-pointer relative">
+              <p className="navheadlines">About</p>
+            </motion.a>
           </Link>
           <Link to="course">
-            <motion.a className="hover:cursor-pointer">Courses</motion.a>
+            <motion.a className="hover:cursor-pointer relative">
+              <p className="navheadlines">Courses</p>
+            </motion.a>
           </Link>
           <motion.a
             onClick={() => setOpen(true)}
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer relative"
           >
-            Contact
+            <p className="navheadlines">Contact</p>
           </motion.a>
           {open && <Contact open={open} setOpen={setOpen} />}
           <motion.div className="select-none">
@@ -83,7 +87,7 @@ function Navbar() {
               animate={{ opacity: 1 }}
               transition={{ ease: "easeOut", duration: 3 }}
             >
-              <Link to="login"> Let's Connect</Link>
+              <Link to="login ">Let's Connect</Link>
             </motion.button>
           </motion.div>
         </motion.div>
@@ -101,25 +105,32 @@ function Navbar() {
         onClose={() => closeDrawer(false)}
       >
         <div className="flex flex-col gap-y-2">
-          <p className="hover:bg-[#277de0] py-2">
-            <Link to="about" className="hover:text-white  ">
-              About
-            </Link>
-          </p>
-          <p className="hover:bg-[#277de0] py-2">
-            <Link to="course" className="hover:text-white  ">
-              Courses
-            </Link>
-          </p>
-          <p
-            onClick={() => setOpen(true)}
-            className="hover:bg-[#277de0] hover:text-white py-2"
-          >
-            Contact
-          </p>
-          <p className="hover:bg-[#277de0] py-2 hover:text-white">
-            Let's Connect
-          </p>
+          <span className="relative">
+            <p className="linestext py-2 border-b-[1px]">
+              <Link to="about" className=" ">
+                About
+              </Link>
+            </p>
+          </span>
+
+          <span className="relative">
+            <p className="linestext py-2 border-b-[1px]">
+              <Link to="course" className=" ">
+                Courses
+              </Link>
+            </p>
+          </span>
+          <span className="relative">
+            <p
+              onClick={() => setOpen(true)}
+              className="linestext py-2 border-b-[1px]"
+            >
+              Contact
+            </p>
+          </span>
+          <span className="relative">
+            <p className=" linestext py-2  border-b-[1px]">Let's Connect</p>
+          </span>
         </div>
       </Drawer>
     </div>

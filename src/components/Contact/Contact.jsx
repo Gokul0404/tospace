@@ -33,7 +33,7 @@ export default function Contact({ open, setOpen }) {
     },
     (
    
-        <Modal width={850} open={open} footer={false}>
+        <Modal width={850} open={open} footer={false} className="modelhead">
           <div className=" contactbg text-white items-center ">
             <div className="w-[100%] flex">
               <h2 className="text-[30px] text-black py-5 ml-[5%] font-bold">
