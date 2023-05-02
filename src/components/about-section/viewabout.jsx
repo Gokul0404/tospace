@@ -16,7 +16,7 @@ function Viewabout() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }
+  },[]
     
   )
   const [teamStatus, setTeamStatus] = useState(0);
