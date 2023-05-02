@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../career/Career.css'
 import Arrow from ".././images/Arrow.png";
 import Arrowr from ".././images/Arrowr.png";
 import Arrow_down from ".././images/arrow_down.png";
 import Curve from ".././images/Vector.png";
 import Curve_down from ".././images/Vectord.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Career() {
+
+    useEffect(() => {
+      Aos.init();
+    }, []);
   return (
     <>
-      <div className="career  careerbg  laptop:block mobile-sm:hidden" id="career">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        className="career  careerbg  laptop:block mobile-sm:hidden"
+        id="career"
+      >
         <div className="career_heading ">
           <h2 className="!text-soon fontbold text-fblue pb-[10vh] text-center">
             Launch Your Career

@@ -7,15 +7,17 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import Aos, { init } from "aos";
+import "aos/dist/aos.css";
 import Founders from "./founders.js";
 
 import Experts from "../about-section/experts";
 
 function Viewabout() {
-
+ Aos.init();
   useEffect(() => {
     window.scrollTo(0, 0);
+    
   },[]
     
   )
@@ -114,7 +116,12 @@ function Viewabout() {
         </div>
         {/* our team */}
 
-        <div className="grid  laptop:grid-cols-2  items-center ">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="2000"
+          className="grid  laptop:grid-cols-2  items-center "
+        >
           <div className="laptop:gap-x-5 desktop:gap-x-10  mobile-sm:grid-cols-1 tablet:grid-cols-2 justify-center flex-wrap grid laptop:grid-cols-4  desktop-lg-4k: ">
             {Founders.map((founder) => {
               return (
@@ -163,7 +170,13 @@ function Viewabout() {
             <h2 className="font-semibold">OUR EXPERTS</h2>
           </div>
           {/* our Experts */}
-          <div className="grid laptop:grid-cols-2  items-center  ">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+       
+            className="grid laptop:grid-cols-2  items-center  "
+          >
             <div className=" laptop:gap-x-5 desktop:gap-x-5 mobile-sm:justify-center flex-wrap grid tablet:grid-cols-2 laptop:grid-cols-3 laptop:w-[78%]">
               {Experts.map((founder) => {
                 return (

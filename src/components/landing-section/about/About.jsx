@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 // import Sponsors from "./sponsors";
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,6 +7,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // import rocket from "../images/rocket.png";
 // import { Pagination, Navigation, FreeMode, Autoplay } from "swiper";
 
@@ -15,6 +17,9 @@ import { Link } from "react-router-dom";
 function About() {
 
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
   //   console.log(imageSlide[currentState].url);
   //   useEffect(() => {
   //     const animate = setTimeout(() => {
@@ -28,7 +33,12 @@ function About() {
   //   }, [currentState]);
 
   return (
-    <div className="aboutbg  py-20  relative ">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="3000"
+      className="aboutbg  py-20  relative "
+    >
       <div className="flex items-center w-screen ">
         <div className=" laptop:w-[20vw] "></div>
         <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[35%] desktop-lg:ml-[35%]  description mobile-sm:order-last laptop:!order-first  ">

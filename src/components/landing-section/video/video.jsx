@@ -6,8 +6,14 @@ import "../../course/Section.css";
 // import {coursedata} from '../../course/SectionData'
 import { Link } from "react-router-dom";
 import Contact from "../../Contact/Contact";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Aos from "aos";
+import { ImageOutlined } from "@mui/icons-material";
+import 'aos/dist/aos.css'
 function Video() {
+  useEffect(() => {
+    Aos.init();
+  },[])
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -74,7 +80,12 @@ function Video() {
           </div>
         </div>
 
-        <div className="card_part  mobile-sm:w-[100%]  mobile-sm:pt-[20vh]   mobile-sm:h-[100%] mobile-sm:pb-[2vh] videobg laptop:py-[10vh] laptop:px-5">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="3000"
+          className="card_part  mobile-sm:w-[100%]  mobile-sm:pt-[20vh]   mobile-sm:h-[100%] mobile-sm:pb-[2vh] videobg laptop:py-[10vh] laptop:px-5"
+        >
           <div className="grid laptop:grid-cols-3 gap-10  mt-10 mobile-sm:grid-rows-1 place-items-center">
             {vediodata.map((res) => {
               return (

@@ -7,9 +7,9 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 import { Twitter } from '@mui/icons-material';
-import { Divider } from "antd";
+
 import Contact from '../../Contact/Contact'
-import { set } from 'lodash';
+
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

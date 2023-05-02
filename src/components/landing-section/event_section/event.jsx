@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -8,16 +8,26 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-creative";
 import "swiper/css/effect-fade";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Pagination, FreeMode, Autoplay } from "swiper";
 import EventsCard from "./event_data";
 
 import "./event.css";
 
 function Event() {
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
-      <div className="event_section  eventbg parafont pb-5  tablet:block" id="event">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        className="event_section  eventbg parafont pb-5  tablet:block"
+        id="event"
+      >
         <div className="event_heading text-center pt-10 ">
           <h1 className="fontbold text-fblue text-desk1">Workshop</h1>
           <h5 className=" mobile-sm:p-1 mobile-sm:text-justify mobile-sm:px-5 laptop:px-0 laptop:text-center ">
@@ -35,7 +45,6 @@ function Event() {
             // pauseOnMouseEnter: false,
             delay: 4500,
             disableOnInteraction: false,
-          
           }}
           pagination={{
             clickable: true,
@@ -169,59 +178,47 @@ function Event() {
                   <div className="flex">
                     <div class="w-[280px] h-fit mobile-sm:hidden laptop:block  desktop-lg-4k:w-[15vw]    border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
-                       
-                          <img
-                            class="p-1 h-[23vh] w-[100%]"
-                            src={cards.url}
-                            alt="img"
-                          />
-                      
+                        <img
+                          class="p-1 h-[23vh] w-[100%]"
+                          src={cards.url}
+                          alt="img"
+                        />
                       </div>
 
                       <div class="px-5">
-                   
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
-                            {EventsCard[index === 0 ? 4 : index - 1].title}
-                          </h5>
-                      
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
+                          {EventsCard[index === 0 ? 4 : index - 1].title}
+                        </h5>
                       </div>
                     </div>
                     <div class="w-[280px]  h-fit desktop-lg-4k:w-[15vw]   shadowca  border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white swipe ">
                       <div className="c">
-                      
-                          <img
-                            class="p-1 h-[25vh] w-[100%]"
-                            src={cards.url}
-                            alt="img"
-                          />
-                    
+                        <img
+                          class="p-1 h-[25vh] w-[100%]"
+                          src={cards.url}
+                          alt="img"
+                        />
                       </div>
 
                       <div class="px-5">
-                       
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
-                            {cards.title}
-                          </h5>
-                    
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
+                          {cards.title}
+                        </h5>
                       </div>
                     </div>
                     <div class="w-[280px] h-fit mobile-sm:hidden laptop:block desktop-lg-4k:w-[15vw]   border border-gray-200 round shadow dark:bg-gray-800 dark:border-gray-700 m-auto bg-white  ">
                       <div className="c">
-                   
-                          <img
-                            class="p-1 h-[23vh] w-[100%]"
-                            src={cards.url}
-                            alt="img"
-                          />
-                    
+                        <img
+                          class="p-1 h-[23vh] w-[100%]"
+                          src={cards.url}
+                          alt="img"
+                        />
                       </div>
 
                       <div class="px-5">
-                   
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
-                            {EventsCard[index === 4 ? 0 : index + 1].title}
-                          </h5>
-                      
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex justify-center text-center">
+                          {EventsCard[index === 4 ? 0 : index + 1].title}
+                        </h5>
                       </div>
                     </div>
                   </div>
