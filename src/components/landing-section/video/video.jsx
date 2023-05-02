@@ -117,7 +117,7 @@ function Video() {
                           <p className="text-justify">{res.pera}</p>
                         </div>
                       </div>
-                      <di className="flex gap-x-5">
+                      <di className="!flex !justify-center !items-center laptop:pb-2">
                         <div className=" py-2 ">
                           <button className="course_btn2 px-3 py-2 mx-3">
                             View More
