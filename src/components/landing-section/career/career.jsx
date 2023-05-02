@@ -196,7 +196,7 @@ function Career() {
         </div>
         <div className="all_steps flex flex-col p-2 gap-y-[1vh]">
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball  h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -218,7 +218,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -240,7 +240,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -262,7 +262,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -284,7 +284,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont  career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -306,7 +306,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -328,7 +328,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -350,7 +350,7 @@ function Career() {
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[4vh] mobile-md:mx-[2vh] tablet:mx-[5vh]">
+            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
