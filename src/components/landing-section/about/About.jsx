@@ -33,13 +33,13 @@ function About() {
   //   }, [currentState]);
 
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-duration="3000"
-      className="aboutbg  py-20  relative "
-    >
-      <div className="flex items-center w-screen ">
+    <div className="aboutbg  py-20  relative  ">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        className="flex items-center w-screen "
+      >
         <div className=" laptop:w-[20vw] "></div>
         <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[35%] desktop-lg:ml-[35%]  description mobile-sm:order-last laptop:!order-first  ">
           <motion.h1 className=" mobile-sm:text-heading mobile-sm:font-bold  mobile-sm:text-center  laptop:text-soon  pb-[10vh] text-fblue laptop:text-justify ">

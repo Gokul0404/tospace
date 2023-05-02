@@ -7,6 +7,7 @@ body {
   font-family: inherit, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 * {
   /* cursor: url(../src/components/landing-section/images/circle.png) 16 16, auto; */

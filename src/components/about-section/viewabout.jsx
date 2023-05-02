@@ -28,8 +28,8 @@ function Viewabout() {
 
   return (
     <>
-      <div className="bg-white h-[100%] text-black p-[10vh] mobile-sm:pt-[35%] tablet:pt-[18%] laptop:pt-[8%]">
-        <div>
+      <div className="bg-white h-[100%] mobile-sm:px-3  mobile-sm:p-0 tablet:p-[10vh] text-black mobile-sm:pt-[35%] tablet:pt-[18%] laptop:pt-[8%]">
+        <div className=" px-[3vh] ">
           <div className="header laptop:text-para mobile-sm:text-[22px] ">
             <h1 className="font-semibold">WHY CHOOSE US</h1>
           </div>
@@ -175,7 +175,6 @@ function Viewabout() {
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="2000"
-       
             className="grid laptop:grid-cols-2  items-center  "
           >
             <div className=" laptop:gap-x-5 desktop:gap-x-5 mobile-sm:justify-center flex-wrap grid tablet:grid-cols-2 laptop:grid-cols-3 laptop:w-[78%]">
