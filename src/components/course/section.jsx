@@ -6,28 +6,30 @@ import { coursedata } from "../course/SectionData";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Contact from "../Contact/Contact";
-export default function Course() {
 
- 
+export default function Course() {
   const [dragStatus, setdragStatus] = useState(false);
   const [dragData, setDragData] = useState("");
-   const [open, setOpen] = useState(false); 
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
-Aos.init();
+    Aos.init();
     window.scrollTo(0, 0);
   }, []);
+
   console.log(dragData.split("."));
   return (
     <div id="course ">
       <div className="bg-white w-screen  pt-[11.5vh] ">
         <div
-          className="w-screen bg-white py-6 course_bg_img mobile-sm:flex mobile-sm:justify-center laptop:flex-none"
+          className="w-screen h-[85vh] bg-white py-6 course_bg_img mobile-md:flex mobile-sm:justify-center laptop:flex-none mobile-sm:!hidden laptop:!block "
           draggable="false"
         >
-          <div className="laptop:flex justify-start laptop:pl-[5%] gap-x-[3%] mobile-sm:hidden laptop:visible ">
+          <div className="laptop:flex justify-start laptop:pl-[5%] gap-x-[3%] ">
             <div className=" mobile-sm:w-[90vw] mobile-sm:h-[40vh] tablet:h-[50vh] laptop:w-[80vw] laptop:h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
               {/* screen */}
               {console.log(dragData)}
+
               <div
                 className=" bg-white  w-[100%] h-[100%] "
                 onDragEnter={(e) => setdragStatus(true)}

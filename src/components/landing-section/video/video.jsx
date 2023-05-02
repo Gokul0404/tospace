@@ -19,7 +19,12 @@ function Video() {
     <>
       <div className="video_part_section videobg  parafont mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center mobile-sm:flex-col ">
         <div className="  video-side  ">
-          <div className="vide0_session mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:flex-none laptop:grid laptop:grid-cols-2 gap-4 w-[100%] pb-10">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+            className="vide0_session mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:flex-none laptop:grid laptop:grid-cols-2 gap-4 w-[100%] pb-10"
+          >
             <div className="content-side mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center mobile-sm:items-center laptop:items-start laptop:flex laptop:justify-start items-start laptop:ml-[10vh] desktop:mx-[20vh] videobg z-10 laptop:pt-20 w-[85%] text-justify">
               <h1 className="fontbold text-fblue text-desk1 text-center">
                 HOW OUR COURSES
@@ -69,10 +74,10 @@ function Video() {
                 muted
                 loop
                 className="laptop:w-[80%]  mobile-sm:w-[200vw] tablet:w-[80vw] outline outline-offset-1 ring-[10px] ring-black outline-black"
-                initial={{ opacity: 0 }}
+                // initial={{ opacity: 0 }}
                 // animate={{ }}
-                whileInView={{ opacity: 0.7 }}
-                transition={{ ease: "easeOut", duration: 4 }}
+                // whileInView={{ opacity: 0.7 }}
+                // transition={{ ease: "easeOut", duration: 4 }}
               >
                 <motion.source src={Vi} type="video/mp4" />
               </motion.video>

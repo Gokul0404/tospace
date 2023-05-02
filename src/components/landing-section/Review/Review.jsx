@@ -12,7 +12,12 @@ export default function Review() {
 },[])
 
   return (
-    <div className="reviewbg w-screen py-20">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="2000"
+      className="reviewbg w-screen py-20"
+    >
       <div className=" text-center flex items-center justify-center">
         <div className="flex items-center flex-col w-[90%] ">
           <div>
@@ -31,12 +36,7 @@ export default function Review() {
         </div>
       </div>
 
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duration="2000"
-        className="mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center  laptop:flex  laptop:flex-row justify-center px-5 py-10"
-      >
+      <div className="mobile-sm:flex mobile-sm:flex-col mobile-sm:justify-center  laptop:flex  laptop:flex-row justify-center px-5 py-10">
         {reviewdata.map((data) => {
           return (
             <div className="w-[100%]   mobile-md:flex-col laptop:flex-row flex items-center justify-center ">
@@ -56,8 +56,10 @@ export default function Review() {
                 <div className="">
                   <div className="flex items-center  ">
                     <div className="w-[70px] h-[70px] rounded-full bg-white overflow-hidden img-roud roundimg ">
-                      <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
-                      alt="img"/>
+                      <img
+                        src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+                        alt="img"
+                      />
                     </div>
                     <div className="pl-5 parafont font-semibold">
                       <p>{data.name}</p>
