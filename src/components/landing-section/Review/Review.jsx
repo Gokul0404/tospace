@@ -56,7 +56,8 @@ export default function Review() {
                 <div className="">
                   <div className="flex items-center  ">
                     <div className="w-[70px] h-[70px] rounded-full bg-white overflow-hidden img-roud roundimg ">
-                      <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" />
+                      <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+                      alt="img"/>
                     </div>
                     <div className="pl-5 parafont font-semibold">
                       <p>{data.name}</p>

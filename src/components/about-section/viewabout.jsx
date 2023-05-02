@@ -7,15 +7,16 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Aos, { init } from "aos";
+import Aos from "aos";
 import "aos/dist/aos.css";
 import Founders from "./founders.js";
 
 import Experts from "../about-section/experts";
 
 function Viewabout() {
- Aos.init();
+ 
   useEffect(() => {
+    Aos.init();
     window.scrollTo(0, 0);
     
   },[]

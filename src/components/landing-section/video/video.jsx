@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import Contact from "../../Contact/Contact";
 import { useEffect, useState } from "react";
 import Aos from "aos";
-import { ImageOutlined } from "@mui/icons-material";
+
 import 'aos/dist/aos.css'
 function Video() {
   useEffect(() => {

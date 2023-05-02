@@ -3,7 +3,8 @@ import "../course/Section.css";
 import "../landing-section/about/about.css";
 
 import { coursedata } from "../course/SectionData";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Contact from "../Contact/Contact";
 export default function Course() {
 
@@ -12,6 +13,7 @@ export default function Course() {
   const [dragData, setDragData] = useState("");
    const [open, setOpen] = useState(false); 
   useEffect(() => {
+Aos.init();
     window.scrollTo(0, 0);
   }, []);
   console.log(dragData.split("."));
@@ -44,8 +46,8 @@ export default function Course() {
                   <img
                     className="w-[100%] h-[100%] border-[5px]  rounded-[20px]"
                     src="./courseimg/intro.gif"
-                      draggable="false"
-                      alt="img"
+                    draggable="false"
+                    alt="img"
                   />
                 )}
               </div>
@@ -121,6 +123,9 @@ export default function Course() {
           </div>
 
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
             className={`!flex flex-row flex-wrap  justify-center  !items-center `}
           >
             {coursedata.map((res) => {
@@ -167,7 +172,7 @@ export default function Course() {
                       <di className=" !flex  !justify-center !items-center gap-x-5">
                         <div className="mobile-sm:pt-5 tablet:pt-5 laptop:pb-5 ">
                           <button className="course_btn2 px-3 py-2 mx-5">
-                           View More
+                            View More
                           </button>
 
                           <button
@@ -176,6 +181,7 @@ export default function Course() {
                           >
                             Register
                           </button>
+                          {open && <Contact open={open} setOpen={setOpen} />}
                         </div>
 
                         <div className="py-5  absolute bottom-0 ">
@@ -187,7 +193,7 @@ export default function Course() {
                           > */}
 
                           {/* line button */}
-{/* 
+                          {/* 
                            <button
                             className="course_btn2 px-5 py-2 "
                             onClick={() => setOpen(true)}
@@ -196,7 +202,6 @@ export default function Course() {
                           </button>  */}
 
                           {/* </Link> */}
-                          {open && <Contact open={open} setOpen={setOpen} />}
                         </div>
                       </di>
                     </div>
