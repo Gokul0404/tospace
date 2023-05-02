@@ -1,9 +1,6 @@
 
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Founder from "../landing-section/images/founder.png";
-import { Twitter } from "@mui/icons-material";
+
 const Founders = [
   {
     id: 1,

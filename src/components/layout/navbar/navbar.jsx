@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Modal, Drawer, Form, Input, Select } from "antd";
+import {  Drawer } from "antd";
 import "../navbar/nav.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../landing-section/images/logowhite.png";
 import blackLogo from "../../landing-section/images/logo.png";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import CloseIcon from "@mui/icons-material/Close";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Twitter } from "@mui/icons-material";
-import { Button, TextField } from "@mui/material";
+import { Link, useLocation } from "react-router-dom";
+
 import Contact from "../../Contact/Contact"; //contact
 
 function Navbar() {
-  const navigate = useNavigate();
+
 
   const location = useLocation();
-  const { Option } = Select;
+  
   const [colorChange, setColorchange] = useState(false);
 
   console.log(colorChange, location.pathname.split("/")[1] === "course");

@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import "../Login/Login.css";
-import { Input, Form, Button } from "antd";
+import { Input, Form } from "antd";
 
 export default function Login() {
   const [signup, setSignup] = useState(false);
-  const [login, setLogin] = useState(!false);
-  const [formData, setFormData] = useState({
-    //create
-    name: "",
-    email: "",
-  });
+
   return (
     <div className=" ">
       <div className="flex flex-row justify-center items-center w-screen h-screen">
@@ -17,6 +12,7 @@ export default function Login() {
           <img
             src="./login.jpg"
             className="object-fill w-[100%] h-[100%]"
+            alt="img"
           ></img>
         </div>
         <div className="w-[30vw] ">
@@ -178,6 +174,7 @@ export default function Login() {
                       <img
                         src="./google.png"
                         className="w-[25px] cursor-pointer"
+                        alt="img"
                       ></img>
                       <p className="cursor-pointer">Sign up with Google</p>
                     </button>
@@ -393,6 +390,7 @@ export default function Login() {
                       <img
                         src="./google.png"
                         className="w-[25px] cursor-pointer"
+                        alt="img"
                       ></img>
                       <p className="cursor-pointer">Sign up with Google</p>
                     </button>

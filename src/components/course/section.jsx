@@ -11,14 +11,12 @@ export default function Course() {
   const [dragStatus, setdragStatus] = useState(false);
   const [dragData, setDragData] = useState("");
   const [open, setOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     Aos.init();
     window.scrollTo(0, 0);
-    window.setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+
   }, []);
 
   console.log(dragData.split("."));

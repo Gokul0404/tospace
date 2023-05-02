@@ -43,6 +43,7 @@ export default function Product() {
             <img
               src={img2}
               className=" mobile-sm:h-[100%] mobile-sm:w-screen  laptop:w-[95%] desktop-lg-4k:h-[80%]"
+              alt="img"
             ></img>
           </div>
 

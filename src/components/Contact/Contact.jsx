@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Form, Input, Select, Button } from "antd";
 import CloseIcon from "@mui/icons-material/Close";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import axios from "axios";
 import { notification } from "antd";
 export default function Contact({ open, setOpen }) {

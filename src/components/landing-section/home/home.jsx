@@ -6,7 +6,7 @@ import About from "../about/About";
 import Career from "../career/career";
 import Video from "../video/video";
 import Event from "../event_section/event";
-import spaceman from "../images/spaceman.png";
+
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
