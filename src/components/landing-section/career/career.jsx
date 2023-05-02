@@ -9,7 +9,7 @@ import Curve_down from ".././images/Vectord.png";
 function Career() {
   return (
     <>
-      <div className="career  careerbg  laptop:block mobile-sm:hidden">
+      <div className="career  careerbg  laptop:block mobile-sm:hidden" id="career">
         <div className="career_heading ">
           <h2 className="!text-soon fontbold text-fblue pb-[10vh] text-center">
             Launch Your Career
@@ -196,7 +196,7 @@ function Career() {
         </div>
         <div className="all_steps flex flex-col p-2 gap-y-[1vh]">
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball  h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -214,11 +214,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px] img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px] img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -236,11 +236,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px] img_arrow_down  absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px] img_arrow_down  absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -258,11 +258,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px] img_arrow_down  absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px] img_arrow_down  absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -280,11 +280,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont  career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -302,11 +302,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -324,11 +324,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">
@@ -346,11 +346,11 @@ function Career() {
             <img
               src={Arrow_down}
               alt="img"
-              className=" w-[20px] img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
+              className=" w-[15px] img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
-            <div className="flex items-center mobile-sm:mx-[18px] mobile-md:mx-[10px] tablet:mx-[28px]">
+            <div className="flex items-center mobile-sm:mx-[20px] mobile-md:mx-[10px] tablet:mx-[28px]">
               <div className="parafont career_black_ball h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] "></div>
               <div className="div flex flex-col m-auto">
                 <h2 className="text-center mt-10  ">

@@ -53,12 +53,13 @@ function Viewabout() {
                 </h1>
               </div>
               <div className="cards w-[100%]  h-auto mt-5 text-black rounded-3xl pb-2 ">
-                <div className="flex justify-around items-center ">
-                  <div className="">
-                    <AccessTimeFilledIcon />
-                  </div>
-                  <div>
-                    <h1 className="text-icon">WATCH</h1>
+                <div className="flex  flex-col ">
+                  <h1 className="text-icon ml-[35px]">WATCH</h1>
+
+                  <div className="flex">
+                    <div className="pr-3">
+                      <AccessTimeFilledIcon />
+                    </div>
                     <h5 className="text-desk">
                       Fun & engaging videos guiding you to learn and helping
                       kids to explore and visualize
@@ -68,12 +69,13 @@ function Viewabout() {
                 </div>
               </div>
               <div className="cards w-[100%]  h-auto mt-5 text-black rounded-3xl  pb-2">
-                <div className="flex justify-around items-center ">
-                  <div className=" ">
-                    <AccessTimeFilledIcon />
-                  </div>
-                  <div>
-                    <h1 className="text-icon">Do</h1>
+                <div className="flex  flex-col ">
+                  <h1 className="text-icon ml-[35px]">DO</h1>
+
+                  <div className="flex">
+                    <div className="pr-3">
+                      <AccessTimeFilledIcon />
+                    </div>
                     <h5 className="text-desk">
                       Fun & engaging videos guiding you to learn and helping
                       kids to explore and visualize
@@ -83,12 +85,13 @@ function Viewabout() {
                 </div>
               </div>
               <div className="cards w-[100%] h-auto mt-5 text-black rounded-3xl pb-2 ">
-                <div className="flex justify-around items-center ">
-                  <div className="">
-                    <AccessTimeFilledIcon />
-                  </div>
-                  <div>
-                    <h1 className="text-icon">LEARN</h1>
+                <div className="flex  flex-col ">
+                  <h1 className="text-icon ml-[35px]">LEARN</h1>
+
+                  <div className="flex">
+                    <div className="pr-3">
+                      <AccessTimeFilledIcon />
+                    </div>
                     <h5 className="text-desk">
                       Fun & engaging videos guiding you to learn and helping
                       kids to explore and visualize

@@ -166,12 +166,12 @@ export default function Course() {
                       </div>
                       <di className=" !flex  !justify-center !items-center gap-x-5">
                         <div className="mobile-sm:pt-5 tablet:pt-5 laptop:pb-5 ">
-                          <button className="course_btn2 px-3 py-2 mx-3">
+                          <button className="course_btn2 px-3 py-2 mx-5">
                            View More
                           </button>
 
                           <button
-                            className="course_btn2 px-5 py-2 mx-3"
+                            className="course_btn2 px-5 py-2 mx-5"
                             onClick={() => setOpen(true)}
                           >
                             Register

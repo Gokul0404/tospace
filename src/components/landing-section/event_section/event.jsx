@@ -17,7 +17,7 @@ function Event() {
 
   return (
     <>
-      <div className="event_section  eventbg parafont pb-5  tablet:block">
+      <div className="event_section  eventbg parafont pb-5  tablet:block" id="event">
         <div className="event_heading text-center pt-10 ">
           <h1 className="fontbold text-fblue text-desk1">Workshop</h1>
           <h5 className=" mobile-sm:p-1 mobile-sm:text-justify mobile-sm:px-5 laptop:px-0 laptop:text-center ">

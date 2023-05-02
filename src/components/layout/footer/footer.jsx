@@ -10,6 +10,7 @@ import { Twitter } from '@mui/icons-material';
 import { Divider } from "antd";
 import Contact from '../../Contact/Contact'
 import { set } from 'lodash';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const[open, setOpen]=useState(false)
@@ -40,22 +41,23 @@ export default function Footer() {
             </div>
           </div>
           <div className=" mobile-sm:py-2 font-semibold laptop:justify-self-center  ">
-            <p className=" ease-in-out duration-700 hover:text-blue-500">
-              About
+            <p className=" ease-in-out duration-700 hover:text-blue-500 cursor-pointer">
+              <Link to="/about">About</Link>
             </p>
-            <p className="py-2  ease-in-out duration-700 hover:text-blue-500">
-              Careers
+            <p className="py-2  ease-in-out duration-700 hover:text-blue-500 cursor-pointer">
+              <a href="#career">Careers</a>
             </p>
-            <p className=" ease-in-out duration-700 hover:text-blue-500 ">
-              Services
+
+            <p className=" ease-in-out duration-700 hover:text-blue-500 pt-1 cursor-pointer">
+              <a href="#event">Events</a>
             </p>
-            <p className=" ease-in-out duration-700 hover:text-blue-500 pt-2">
-              Events
+            <p className="py-2  ease-in-out duration-700 hover:text-blue-500 cursor-pointer">
+              <Link to="/course">Courses</Link>
             </p>
-            <p className="py-2  ease-in-out duration-700 hover:text-blue-500">
-              Courses
-            </p>
-            <p className=" ease-in-out duration-700 hover:text-blue-500">
+            <p
+              className=" ease-in-out duration-700 hover:text-blue-500 cursor-pointer"
+              onClick={() => setOpen(true)}
+            >
               Contact Us
             </p>
           </div>
@@ -118,10 +120,10 @@ export default function Footer() {
               >
                 Subscribe
               </button>
-              {open && <Contact open={open} setOpen={setOpen} />}
             </div>
           </div>
         </div>
+        {open && <Contact open={open} setOpen={setOpen} />}
       </div>
     </>
   );
