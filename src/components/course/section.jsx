@@ -116,8 +116,8 @@ export default function Course() {
         </div>
         <div>
           <div className="flex flex-col justify-center items-center text-white py-[10vh]">
-            <h2 className="text-fblue   fontbold">COURSE</h2>
-            <p className="text-center w-[80vw] parafont ">
+            <h2 className="text-fblue  mobile-sm:pt-5 tablet:pt-0  fontbold">COURSE</h2>
+            <p className="mobile-sm:text-justify tablet:text-center w-[80vw] parafont ">
               You can use any value defined in your opacity scale, or use
               arbitrary values if you need to deviate from your design tokens
               arbitrary values if you need to deviate from your design tokens.
