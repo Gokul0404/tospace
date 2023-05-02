@@ -22,7 +22,7 @@ export default function Course() {
           className="w-screen bg-white py-6 course_bg_img mobile-sm:flex mobile-sm:justify-center laptop:flex-none"
           draggable="false"
         >
-          <div className="laptop:flex justify-start laptop:pl-[5%] gap-x-[3%] ">
+          <div className="laptop:flex justify-start laptop:pl-[5%] gap-x-[3%] mobile-sm:hidden laptop:visible ">
             <div className=" mobile-sm:w-[90vw] mobile-sm:h-[40vh] tablet:h-[50vh] laptop:w-[80vw] laptop:h-[80vh] outline outline-white rounded-[20px] overflow-hidden ">
               {/* screen */}
               {console.log(dragData)}
@@ -160,15 +160,23 @@ export default function Course() {
                         </div>
 
                         <div className="py-3">
-                          <p className="pb-5 text-justify">{res.pera}</p>
+                          <p className="pb-3 text-justify">{res.pera}</p>
                         </div>
                       </div>
-                      <di className="flex  justify-center items-center gap-x-5">
-                        {/* <div className="py-5">
-                          <button className="course_btn1 px-5 py-2">
-                            Get a Quote
+                      <di className=" !flex  !justify-center !items-center gap-x-5">
+                        <div className=" py-2 ">
+                          <button className="course_btn2 px-3 py-2 mx-3">
+                           View More
                           </button>
-                        </div> */}
+
+                          <button
+                            className="course_btn2 px-5 py-2 mx-3"
+                            onClick={() => setOpen(true)}
+                          >
+                            Register
+                          </button>
+                        </div>
+
                         <div className="py-5  absolute bottom-0 ">
                           {/* <Link
                             to="/product"
@@ -176,12 +184,16 @@ export default function Course() {
                               id: res.id, //data share in another component
                             }}
                           > */}
-                          <button
+
+                          {/* line button */}
+
+                          {/* <button
                             className="course_btn2 px-5 py-2 "
                             onClick={() => setOpen(true)}
                           >
                             Register
-                          </button>{" "}
+                          </button> */}
+
                           {/* </Link> */}
                           {open && <Contact open={open} setOpen={setOpen} />}
                         </div>

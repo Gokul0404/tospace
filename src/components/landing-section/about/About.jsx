@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { motion } from "framer-motion";
-import Sponsors from "./sponsors";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import Sponsors from "./sponsors";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "../about/about.css";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import rocket from "../images/rocket.png";
-import { Pagination, Navigation, FreeMode, Autoplay } from "swiper";
+// import rocket from "../images/rocket.png";
+// import { Pagination, Navigation, FreeMode, Autoplay } from "swiper";
 
 import imageSlide from "./about_data";
+import { Link } from "react-router-dom";
 function About() {
   const [currentState, setcurrentState] = useState(0);
 
@@ -53,9 +54,11 @@ function About() {
             >
               View More
             </motion.button> */}
-            <button className="ab_btn laptop:!cursor-pointer !font-[700]">
-              View More
-            </button>
+            <Link to="/about">
+              <button className="ab_btn laptop:!cursor-pointer !font-[700]">
+                View More
+              </button>
+            </Link>
           </div>
         </div>
 

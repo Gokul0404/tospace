@@ -13,7 +13,10 @@ export default function Contact({ open, setOpen }) {
   const handleSubmit = async (values) => {
     try {
       setLoading(true); //click to load
-      await axios.post("http://localhost:8002/api/sendEmail", values);
+      await axios.post(
+        "https://tospaceserver.vercel.app/api/sendEmail",
+        values
+      );
       form.resetFields()  //submit to clear the text fields
       notification.success({ message: "Mail sent successfully" }); //npm init antd
       setLoading(false);
