@@ -3,10 +3,10 @@ import "../course/Section.css";
 import "../landing-section/about/about.css";
 
 import { coursedata } from "../course/SectionData";
-import { useNavigate, Link, NavLink } from "react-router-dom";
+
 import Contact from "../Contact/Contact";
 export default function Course() {
-  const navigate = useNavigate();
+
  
   const [dragStatus, setdragStatus] = useState(false);
   const [dragData, setDragData] = useState("");
@@ -44,7 +44,8 @@ export default function Course() {
                   <img
                     className="w-[100%] h-[100%] border-[5px]  rounded-[20px]"
                     src="./courseimg/intro.gif"
-                    draggable="false"
+                      draggable="false"
+                      alt="img"
                   />
                 )}
               </div>
@@ -164,7 +165,7 @@ export default function Course() {
                         </div>
                       </div>
                       <di className=" !flex  !justify-center !items-center gap-x-5">
-                        <div className=" py-2 ">
+                        <div className="mobile-sm:pt-5 tablet:pt-5 laptop:pb-5 ">
                           <button className="course_btn2 px-3 py-2 mx-3">
                            View More
                           </button>
@@ -186,13 +187,13 @@ export default function Course() {
                           > */}
 
                           {/* line button */}
-
-                          {/* <button
+{/* 
+                           <button
                             className="course_btn2 px-5 py-2 "
                             onClick={() => setOpen(true)}
                           >
                             Register
-                          </button> */}
+                          </button>  */}
 
                           {/* </Link> */}
                           {open && <Contact open={open} setOpen={setOpen} />}

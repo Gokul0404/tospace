@@ -1,4 +1,5 @@
 import React from "react";
+import '../career/Career.css'
 import Arrow from ".././images/Arrow.png";
 import Arrowr from ".././images/Arrowr.png";
 import Arrow_down from ".././images/arrow_down.png";
@@ -8,9 +9,9 @@ import Curve_down from ".././images/Vectord.png";
 function Career() {
   return (
     <>
-      <div className="career laptop: desktop-lg: careerbg  laptop:block mobile-sm:hidden">
+      <div className="career  careerbg  laptop:block mobile-sm:hidden">
         <div className="career_heading ">
-          <h2 className="text-para fontbold text-fblue pb-[10vh] text-center">
+          <h2 className="!text-soon fontbold text-fblue pb-[10vh] text-center">
             Launch Your Career
           </h2>
         </div>
@@ -32,7 +33,7 @@ function Career() {
                 </div>
               </div>
             </div>
-            <img src={Arrow} alt="" className="self-start w-[150px] pt-4" />
+            <img src={Arrow} alt="img" className="self-start w-[150px] pt-4" />
             <div className="w-[250px] h-[100px] ">
               <div className="flex items-center flex-col">
                 <div className="parafont h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] p-5"></div>
@@ -48,7 +49,7 @@ function Career() {
                 </div>
               </div>
             </div>
-            <img src={Arrow} alt="" className="self-start w-[150px] pt-4" />
+            <img src={Arrow} alt="img" className="self-start w-[150px] pt-4" />
             <div className="w-[250px] h-[100px] ">
               <div className="flex items-center flex-col">
                 <div className="parafont h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] p-5"></div>
@@ -64,7 +65,7 @@ function Career() {
                 </div>
               </div>
             </div>
-            <img src={Arrow} alt="" className="self-start w-[150px] pt-4" />
+            <img src={Arrow} alt="img" className="self-start w-[150px] pt-4" />
             <div className="w-[250px] h-[100px] ">
               <div className="flex items-center flex-col">
                 <div className="parafont h-[30px] w-[30px] rounded-full bg-gradient-to-r from-fblue to-[#27252838] p-5"></div>
@@ -84,7 +85,7 @@ function Career() {
             <div className="pb-4">
               <img
                 src={Curve}
-                alt=""
+                alt="img"
                 className="self-end float-right w-[50px] "
               />
             </div>
@@ -93,7 +94,7 @@ function Career() {
 
           {/* <div className=" self-end 4k:mx-[20vw] laptop-lg:mx-[0.2vw] desktop-lg-4k:mx-[10vw]">
             <div className="">
-              <img src={Arrow_down} alt="" className=" w-[10px] " />
+              <img src={Arrow_down} alt="img" className=" w-[10px] " />
             </div>
           </div> */}
 
@@ -116,7 +117,7 @@ function Career() {
             </div>
             <img
               src={Arrowr}
-              alt=""
+              alt="img"
               className="self-start w-[150px]  pt-[4vh]"
             />
             <div className="w-[250px] h-[100px] ">
@@ -136,7 +137,7 @@ function Career() {
             </div>
             <img
               src={Arrowr}
-              alt=""
+              alt="img"
               className="self-start w-[150px] pt-[4vh]"
             />
             <div className="w-[250px] h-[100px] ">
@@ -156,7 +157,7 @@ function Career() {
             </div>
             <img
               src={Arrowr}
-              alt=""
+              alt="img"
               className="self-start w-[150px] pt-[4vh] "
             />
             <div className="w-[250px] h-[100px] ">
@@ -178,7 +179,7 @@ function Career() {
             <div className="4k:pb-[10.5vh] laptop-lg:pb-[12vh]">
               <img
                 src={Curve_down}
-                alt=""
+                alt="img"
                 className=" self-end float-right w-[50px]"
               />
             </div>
@@ -189,7 +190,7 @@ function Career() {
       {/* mobile view */}
       <div className="mobile_career careerbg  pb-[5vh] laptop:hidden">
         <div className="career_heading ">
-          <h2 className="text-icon font-spaceage text-fblue text-center pt-3">
+          <h2 className="mobile-sm:text-heading mobile-sm:font-bold   text-fblue text-center pt-3">
             lanch your Career
           </h2>
         </div>
@@ -212,8 +213,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px] img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont">
@@ -234,8 +235,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px] img_arrow_down  absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
@@ -256,8 +257,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px] img_arrow_down  absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
@@ -278,8 +279,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
@@ -300,8 +301,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
@@ -322,8 +323,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px]  img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">
@@ -344,8 +345,8 @@ function Career() {
           <div className="arrow_down h-[0vh]">
             <img
               src={Arrow_down}
-              alt=""
-              className=" w-[20px]  absolute mx-[5vw]  mt-[-25vh] "
+              alt="img"
+              className=" w-[20px] img_arrow_down absolute mx-[5vw]  mt-[-25vh] "
             />
           </div>
           <div className="step_1 parafont h-[400px]">

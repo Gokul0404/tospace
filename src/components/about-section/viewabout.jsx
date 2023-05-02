@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import Founders from "./founders.js";
-import { get } from "lodash";
+
 import Experts from "../about-section/experts";
 
 function Viewabout() {
@@ -125,6 +125,7 @@ function Viewabout() {
                     <img
                       src={founder.image}
                       className="imagese1 mobile-sm:w-[180px] mobile-sm:h-[180px] h-[150px] w-[150px] tablet:w-[200px] tablet:h-[200px] desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px]"
+                      alt="img"
                     ></img>
                     <div className="!hidden miniconimg group-hover:!block    laptop:invisible mobile-sm:block absolute z-30 top-0 mobile-sm:text-[10px] tablet:text-[12px] ">
                       <h2 className="mobile-sm:text-[20px] font-bold laptop:w-[100vw] text-center mobile-sm:text-white pt-7">
@@ -139,6 +140,7 @@ function Viewabout() {
                   <img
                     src="./linkedin.png"
                     className="w-[18px] pt-2  cursor-pointer"
+                    alt="img"
                   ></img>
                 </div>
               );
@@ -172,6 +174,7 @@ function Viewabout() {
                       <img
                         src={founder.image}
                         className="imagese  desktop-lg-4k:h-[180px] desktop-lg-4k:w-[180px]"
+                        alt="img"
                       ></img>
                       <div className="!hidden miniconimg group-hover:!block   laptop:invisible mobile-sm:block absolute z-30 top-0 mobile-sm:text-[10px] tablet:text-[12px] ">
                         <h2 className="mobile-sm:text-[20px] font-bold laptop:w-[100vw]  text-center mobile-sm:text-white pt-7">
@@ -185,6 +188,7 @@ function Viewabout() {
                     <img
                       src="./linkedin.png"
                       className="w-[18px] pt-2  cursor-pointer"
+                      alt="img"
                     ></img>
                   </div>
                 );

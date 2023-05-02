@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 import { motion } from "framer-motion";
 // import Sponsors from "./sponsors";
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import imageSlide from "./about_data";
 import { Link } from "react-router-dom";
 function About() {
-  const [currentState, setcurrentState] = useState(0);
+
 
   //   console.log(imageSlide[currentState].url);
   //   useEffect(() => {
@@ -32,7 +32,7 @@ function About() {
       <div className="flex items-center w-screen ">
         <div className=" laptop:w-[20vw] "></div>
         <div className="mobile-sm:w-[100%] mobile-sm:px-5  mobile-sm:flex mobile-sm:justify-center mobile-sm:items-center laptop:items-start mobile-sm:flex-col laptop:justify-arround laptop:ml-[35%] desktop-lg:ml-[35%]  description mobile-sm:order-last laptop:!order-first  ">
-          <motion.h1 className=" mobile-sm:text-heading mobile-sm:font-bold  mobile-sm:text-center laptop:text- laptop:text-soon  pb-[10vh] text-fblue laptop:text-justify ">
+          <motion.h1 className=" mobile-sm:text-heading mobile-sm:font-bold  mobile-sm:text-center  laptop:text-soon  pb-[10vh] text-fblue laptop:text-justify ">
             THE HISTORY OF TOSPACE LEARN
           </motion.h1>
 
@@ -42,7 +42,7 @@ function About() {
             animate={{ opacity: 1 }}
             transition={{ duration: 5 }}
           >
-            {imageSlide[currentState].message}
+            {imageSlide[0].message}
           </motion.p>
 
           <div className=" font-Azon mt-[5vh]">

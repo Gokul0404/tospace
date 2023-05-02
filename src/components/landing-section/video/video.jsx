@@ -118,6 +118,18 @@ function Video() {
                         </div>
                       </div>
                       <di className="flex gap-x-5">
+                        <div className=" py-2 ">
+                          <button className="course_btn2 px-3 py-2 mx-3">
+                            View More
+                          </button>
+
+                          <button
+                            className="course_btn2 px-5 py-2 mx-3"
+                            onClick={() => setOpen(true)}
+                          >
+                            Register
+                          </button>
+                        </div>
                         {/* <div className="py-5">
                           <button className="course_btn1 px-5 py-2">
                             Get a Quote
@@ -125,12 +137,12 @@ function Video() {
                         </div> */}
                         <div className="py-5">
                           {/* <Link to="/product" state={{ id: res.id }}>  //data send to the another page */}
-                          <button
+                          {/* <button
                             className="course_btn2 px-5 py-2"
                             onClick={() => setOpen(true)}
                           >
                             Register
-                          </button>
+                          </button> */}
                           {/* </Link> */}
                           {/* 
                           {open && <Contact open={open} setOpen={setOpen} />} */}
