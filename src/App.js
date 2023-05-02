@@ -14,6 +14,7 @@ import Course from "./components/course/section";
 import Login from "./components/Login/Login";
 import Product from "./components/product/product";
 import Contact from "./components/Contact/Contact";
+import { useEffect } from "react";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,6 +33,11 @@ const router = createBrowserRouter(
 );
 
 function App() {
+  useEffect(() => {
+    document.oncontextmenu = () => {
+      return false;
+    };
+  },[])
   return (
     <>
       <div className="App">
