@@ -170,7 +170,8 @@ export default function Contact({ open, setOpen }) {
               ]}
               name="message"
             >
-              <Input
+              <Input.TextArea
+                cols={4}
                 placeholder="Message"
                 className="laptop:!h-[90px] laptop:!w-[540px]   hover:!border-2 "
               />
@@ -309,7 +310,8 @@ export default function Contact({ open, setOpen }) {
               ]}
               name="message"
             >
-              <Input
+              <Input.TextArea
+                color={4}
                 placeholder="Message"
                 className="!h-[120px] !w-[250px]   hover:!border-2 "
               />

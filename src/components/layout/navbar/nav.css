@@ -38,6 +38,10 @@
   color: black !important;
 }
 
+.ant-form-item-control-input-content textarea::placeholder{
+  color:black !important;
+}
+
 @media screen and (min-width:1024px) {
 
   .mobileview{
