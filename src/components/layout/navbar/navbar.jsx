@@ -37,8 +37,8 @@ function Navbar() {
     <div
       className={`${
         colorChange
-          ? `bg-white  text-black shadow-lg  `
-          : "bg-transparent text-white"
+          ? `bg-white  text-black shadow-lg navwhite `
+          : "bg-transparent text-white navtrans"
       } ${
         location.pathname.split("/")[1] === "login" ? "hidden" : "block"
       } nav_bg2 absolute w-screen  flex justify-center z-40 ease-in-out duration-500`}
