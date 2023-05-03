@@ -31,6 +31,7 @@
 .sun {
   width: 45px;
   height: 45px;
+  color: white;
   /* background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
   background: linear-gradient(to right, #fcbb04, #fffc00); */
   background: rgb(255,255,255);

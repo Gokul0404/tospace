@@ -1,6 +1,7 @@
 import Aos from "aos";
 import React, { useEffect, useState } from "react";
 import '../scrollball/scrollbal.css'
+
 import RocketIcon from "@mui/icons-material/Rocket";
 import "aos/dist/aos.css";
 export default function Round() {
@@ -25,7 +26,7 @@ export default function Round() {
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <a href="#home" className="ease-in-out duration-300">  
+      <a href="#nav" className="ease-in-out duration-300">  
         <div class="container_sun">
           <span class="sun sunshine"></span>
           <span class="sun">

@@ -7,6 +7,7 @@ module.exports = {
       head: "55px",
       soon: "35px",
       icon: "25px",
+      icon2:"29px",
       para: "36px",
       head: "45px",
       desk1: "44px",

@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import Founders from "./founders.js";
 
 import Experts from "../about-section/experts";
+import Round from "../landing-section/scrollball/scrollbal";
 
 function Viewabout() {
  
@@ -220,7 +221,9 @@ function Viewabout() {
             </div>
           </div>
         </div>
+
       </div>
+      <Round/>
     </>
   );
 }

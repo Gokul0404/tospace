@@ -14,6 +14,8 @@ import Course from "./components/course/section";
 import Login from "./components/Login/Login";
 import Product from "./components/product/product";
 import Contact from "./components/Contact/Contact";
+import Planets from "./components/Planets/Planets";
+import Galex from "./components/Planets/Galex";
 // import { useEffect } from "react";
 
 const router = createBrowserRouter(
@@ -26,6 +28,8 @@ const router = createBrowserRouter(
       <Route path="login" element={<Login />} />
       <Route path="product" element={<Product/>} />
       <Route path="contact" element={<Contact/>} />
+      <Route path="planets" element={<Planets/>} />
+      <Route path="galex" element={<Galex/>} />
       {/* <Route path="courses" element={<Course />} />
       <Route path="contact" element={<Contact />} />  */}
     </Route>

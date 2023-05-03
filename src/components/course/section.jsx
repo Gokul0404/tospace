@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../course/Section.css";
 import "../landing-section/about/about.css";
-
+import Round from "../landing-section/scrollball/scrollbal";
 import { coursedata } from "../course/SectionData";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Contact from "../Contact/Contact";
-import { Skeleton } from "@mui/material";
+
 import { Spin } from "antd";
+
 
 export default function Course() {
   const [dragStatus, setdragStatus] = useState(false);
@@ -34,6 +35,7 @@ export default function Course() {
                 {console.log(dragData)}
 
                 <div
+                  id="#course1"
                   className=" bg-white  w-[100%] h-[100%] "
                   onDragEnter={(e) => setdragStatus(true)}
                 >
@@ -225,6 +227,7 @@ export default function Course() {
             </div>
           </div>
         </div>
+      <Round/>
       </div>
     </>
   );

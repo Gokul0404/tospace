@@ -24,7 +24,8 @@ function Navbar() {
       location.pathname.split("/")[1] === "course" ||
       location.pathname.split("/")[1] === "about" ||
       location.pathname.split("/")[1] === "product"||
-      location.pathname.split("/")[1] === "contact"
+      location.pathname.split("/")[1] === "contact" ||
+      location.pathname.split("/")[1] === "planets"
     ) {
       setColorchange(true);
     } else {
@@ -36,13 +37,16 @@ function Navbar() {
     <div
       className={`${
         colorChange
-          ? `bg-white text-black shadow-lg  `
+          ? `bg-white  text-black shadow-lg  `
           : "bg-transparent text-white"
       } ${
         location.pathname.split("/")[1] === "login" ? "hidden" : "block"
       } nav_bg2 absolute w-screen  flex justify-center z-40 ease-in-out duration-500`}
     >
-      <motion.div className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%]   fontnav">
+      <motion.div
+        id="nav"
+        className=" flex items-center justify-between  gap-x-[5vw] h-[10vh] w-[85%]   fontnav"
+      >
         <motion.div>
           <Link to="/home">
             <motion.img
@@ -74,6 +78,11 @@ function Navbar() {
           >
             <p className="navheadlines">Contact</p>
           </motion.a>
+          <Link to="planets">
+            <motion.a className="hover:cursor-pointer relative">
+              <p className="navheadlines">Explore More</p>
+            </motion.a>
+          </Link>
           {open && <Contact open={open} setOpen={setOpen} />}
           <motion.div className="select-none">
             <motion.button
@@ -121,6 +130,13 @@ function Navbar() {
               className="linestext py-2 border-b-[1px]"
             >
               Contact
+            </p>
+          </span>
+          <span className="relative">
+            <p className="linestext py-2 border-b-[1px]">
+              <Link to="planets" className=" ">
+             Explore More
+              </Link>
             </p>
           </span>
           <span className="relative">
