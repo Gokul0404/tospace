@@ -29,8 +29,8 @@ function Home() {
             </motion.p>
             <div className=" mobile-sm:w-[100%] laptop:w-[90%] desktop-lg-4k:w-[100%] pt-10 flex items-start  gap-x-2 ">
               <div className="w-[50px] bg-yellow-500 h-[0.3vh] mt-3 desktop-lg-4k:mt-5"></div>
-              <div className="desktop-lg-4k:text-[25px]">
-                {" "}
+              <div className=" desktop-lg-4k:text-[25px]">
+               
                 Once upon a time building a satellite is only a dream, a group
                 of passionate
               </div>

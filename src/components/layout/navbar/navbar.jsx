@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {  Drawer } from "antd";
+import { Drawer } from "antd";
 import "../navbar/nav.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../landing-section/images/logowhite.png";
@@ -10,10 +10,8 @@ import { Link, useLocation } from "react-router-dom";
 import Contact from "../../Contact/Contact"; //contact
 
 function Navbar() {
-
-
   const location = useLocation();
-  
+
   const [colorChange, setColorchange] = useState(false);
 
   console.log(colorChange, location.pathname.split("/")[1] === "course");
@@ -23,8 +21,8 @@ function Navbar() {
     if (
       location.pathname.split("/")[1] === "course" ||
       location.pathname.split("/")[1] === "about" ||
-      location.pathname.split("/")[1] === "product"||
-      location.pathname.split("/")[1] === "contact" ||
+      location.pathname.split("/")[1] === "product" ||
+      location.pathname.split("/")[1] === "contact"||
       location.pathname.split("/")[1] === "planets"
     ) {
       setColorchange(true);
@@ -33,6 +31,7 @@ function Navbar() {
     }
   }, [location.pathname.split("/")[1]]);
 
+ 
   return (
     <div
       className={`${
@@ -40,7 +39,8 @@ function Navbar() {
           ? `bg-white  text-black shadow-lg navwhite `
           : "bg-transparent text-white navtrans"
       } ${
-        location.pathname.split("/")[1] === "login" ? "hidden" : "block"
+        location.pathname.split("/")[1] === "login" ? "hidden" : "block",
+         location.pathname.split("/")[1] === "galex" ? "hidden" : "visible"
       } nav_bg2 absolute w-screen  flex justify-center z-40 ease-in-out duration-500`}
     >
       <motion.div
@@ -135,7 +135,7 @@ function Navbar() {
           <span className="relative">
             <p className="linestext py-2 border-b-[1px]">
               <Link to="planets" className=" ">
-             Explore More
+                Explore More
               </Link>
             </p>
           </span>
